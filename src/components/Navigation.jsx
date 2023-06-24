@@ -7,8 +7,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const Navigation = () => {
-  console.log(usePathname());
-
   return (
     <Navbar
       collapseOnSelect
