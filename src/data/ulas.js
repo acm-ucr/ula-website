@@ -8,7 +8,7 @@ export const ulas = [
   {
     name: "Diane",
     description:
-      "I am a third fourth year computer science major and I wanted to be a ULA because helping people is lots of fun and I was in the same boat before as well! A random fact about me is that my hearing is not very good so one of the words I most often say is “huh”.",
+      "I am a fourth year computer science major and I wanted to be a ULA because helping people is lots of fun and I was in the same boat before as well! A random fact about me is that my hearing is not very good so one of the words I most often say is “huh”.",
     image: "https://ucr-ula.github.io/images/diane.jpg",
   },
   {
@@ -20,13 +20,13 @@ export const ulas = [
   {
     name: "Gabriel",
     description:
-      "Hi everyone, I’m Gabriel, a junior senior at UCR. I’m a CS major, and I wanted to become a tutor because I’m interested in being a professor myself one day and this seemed like a good place to start. I’m into a wide genre of video games and love pizza.",
+      "Hi everyone, I’m Gabriel, a senior at UCR. I’m a CS major, and I wanted to become a tutor because I’m interested in being a professor myself one day and this seemed like a good place to start. I’m into a wide genre of video games and love pizza.",
     image: "https://ucr-ula.github.io/images/gabriel.jpg",
   },
   {
     name: "Joshua",
     description:
-      "Hi! My name is Joshua and I’m a sophomore junior computer science major. I wanted to be a ULA because I enjoy teaching and helping others, and I have a passion for what we’re learning in these classes. A random fact about me is that I am a huge basketball nerd.",
+      "Hi! My name is Joshua and I’m a junior computer science major. I wanted to be a ULA because I enjoy teaching and helping others, and I have a passion for what we’re learning in these classes. A random fact about me is that I am a huge basketball nerd.",
     image: "https://ucr-ula.github.io/images/joshua.jpeg",
   },
   {
@@ -50,7 +50,7 @@ export const ulas = [
   {
     name: "Taneesha",
     description:
-      "I am a Computer Science Major. This is my second third year at UCR, so I am a sophomore junior. I decided to join the ULA because I understand the feeling of being lost and hesitating to reach out for help, and all we need is reassurance and a little help to discover our potential. I love helping people with the resources that I have. A random fact about me is that I love eating spicy food and challenging myself to eat the spiciest that I can get. I am also a huge fan of the boyband BTS!",
+      "I am a Computer Science Major. This is my second third year at UCR, so I am a junior. I decided to join the ULA because I understand the feeling of being lost and hesitating to reach out for help, and all we need is reassurance and a little help to discover our potential. I love helping people with the resources that I have. A random fact about me is that I love eating spicy food and challenging myself to eat the spiciest that I can get. I am also a huge fan of the boyband BTS!",
     image: "https://ucr-ula.github.io/images/taneesha.jpg",
   },
 ];
