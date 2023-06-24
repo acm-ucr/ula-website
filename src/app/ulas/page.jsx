@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../../components/Header";
 import ULA from "./ULA";
-import { ulas } from "../data/ulas";
+import { ulas } from "../../data/ulas";
 
 const Page = () => {
   return (
