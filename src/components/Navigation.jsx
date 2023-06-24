@@ -6,6 +6,10 @@ import { Navbar } from "react-bootstrap";
 import { FaBars } from "react-icons/fa";
 const items = [
   {
+    link: "/",
+    page: "Home",
+  },
+  {
     link: "/overview",
     page: "Overview",
   },
