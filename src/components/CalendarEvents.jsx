@@ -22,23 +22,18 @@ const CalendarEvents = ({ calendar, name, color, text, border }) => {
         `https://www.googleapis.com/calendar/v3/calendars/${calendar}/events?key=${process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY}`
       )
       .then((response) => {
-        const calendarEvents = response.data.items
-          .filter((a) => {
-            if (a.start && a.end) {
-              a.start = new Date(a.start.dateTime);
-              a.end = new Date(a.end.dateTime);
-              a.color = color;
+        const calendarEvents = response.data.items.sort((a, b) => {
+          if (a.start && a.end) {
+            a.start = new Date(a.start.dateTime);
+            a.end = new Date(a.end.dateTime);
+            a.color = color;
 
-              a.textColor = text;
+            a.textColor = text;
 
-              a.border = border;
-
-              return true;
-            }
-          })
-          .sort((a, b) => {
-            return new Date(a.start) - new Date(b.start);
-          });
+            a.border = border;
+          }
+          return new Date(a.start) - new Date(b.start);
+        });
         setEvents(calendarEvents);
       })
       .catch((error) => {
