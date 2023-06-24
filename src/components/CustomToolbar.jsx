@@ -5,7 +5,7 @@ import Row from "react-bootstrap/Row";
 
 const CustomToolbar = (event) => {
   return (
-    <div className="flex justify-center items-center w-full">
+    <div className="flex justify-center items-center w-full my-3">
       <Row className=" w-full flex justify-start items-center">
         <Col
           xs={4}
@@ -15,7 +15,7 @@ const CustomToolbar = (event) => {
             onClick={() => event.onNavigate("PREV")}
             className="hover:text-acm-darkgray hover:cursor-pointer"
           />
-          <div className="text-center text-5xl p-1">
+          <div className="text-center text-3xl p-1">
             {event.date.getMonth() + 1 < 10
               ? `0${event.date.getMonth() + 1}`
               : event.date.getMonth() + 1}
