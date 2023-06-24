@@ -59,7 +59,7 @@ const Home = () => {
               2023 quarter (Jan. 16, 2023).
             </p>
             <div className=" w-10/12 flex justify-end">
-              <Button name="learn more" link="overview" />
+              <Button name="Learn More!" link="overview" />
             </div>
           </div>
           <img src="/map.png" className="w-1/3 bg-cover hidden sm:block" />
