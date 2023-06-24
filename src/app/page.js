@@ -9,7 +9,7 @@ const Home = () => {
     "Software construction: CS 100",
   ];
   return (
-    <div className="w-full flex flex-col items-center justify-center">
+    <div className="w-full flex flex-col items-center justify-center overflow-hidden">
       <div className="w-full relative">
         <img
           className="w-screen h-[50vh] object-cover"
