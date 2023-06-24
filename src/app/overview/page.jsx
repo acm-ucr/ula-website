@@ -28,6 +28,7 @@ const goals = [
 const page = () => {
   return (
     <div className="flex justify-center items-center flex-col">
+      <title>ULA Overview</title>
       <Header title="OVERVIEW" />
       <div className="w-10/12 mt-9 flex flex-col justify-center">
         <Banner title="The UCR CS ULA program started in Fall 2021. The goals of the program are to:" />
