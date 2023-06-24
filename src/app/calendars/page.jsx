@@ -12,7 +12,7 @@ const SOFTWARE_ENGINEERING =
 const Page = () => {
   return (
     <div>
-      <title>ULA Calendars</title>
+      <title>Calendars</title>
       <Header title="Calendars" />
       <CalendarEvents
         calendar={SOFTWARE}
