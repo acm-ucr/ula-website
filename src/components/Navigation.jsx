@@ -29,7 +29,7 @@ const Navigation = () => {
   return (
     <>
       <Navbar
-        className="flex flex-col justify-between bg-ula-blue m-0 p-0"
+        className="flex flex-col justify-between bg-ula-blue m-0 p-0 h-9"
         collapseOnSelect
         expand="md"
         fixed="top"
