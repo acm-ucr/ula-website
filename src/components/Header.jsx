@@ -2,7 +2,7 @@ import React from "react";
 
 const Header = ({ title }) => {
   return (
-    <div className="w-full ">
+    <div className="w-full my-4">
       <img
         className="w-screen h-[40vh] object-cover"
         src="https://admissions.ucr.edu/sites/default/files/styles/article_header_l/public/2021-10/ucr_submit-your-uc-application-to-ucr_blog.jpg?h=3f097dd9&itok=3qBGU0ZF"

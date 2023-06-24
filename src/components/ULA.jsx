@@ -3,7 +3,7 @@ import React from "react";
 
 const ULA = ({ name, description, image }) => {
   return (
-    <div className="w-11/12 flex justify-between mt-4">
+    <div className="flex justify-between mt-4">
       <img className="w-2/12 rounded" src={image} />
       <div className="w-10/12 px-4">
         <div className="bg-ula-yellow w-fit">
