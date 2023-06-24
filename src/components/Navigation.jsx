@@ -25,9 +25,7 @@ const items = [
 
 const Navigation = () => {
   const [selected, setSelected] = useState("Logo");
-  const onClick = (page) => {
-    setSelected(page);
-  };
+
   return (
     <>
       <Navbar
@@ -36,8 +34,8 @@ const Navigation = () => {
         expand="md"
         fixed="top"
       >
-        <div className="flex flex-row w-full justify-between m-0 itmes-center">
-          <Navbar.Brand className="m-0 p-0 flex itmes-center">
+        <div className="flex flex-row w-full justify-between m-0">
+          <Navbar.Brand className="m-0 p-0 flex">
             <Link
               href="/"
               className="font-bold no-underline text-white text-lg p-0 ml-5 align-middle py-1"
@@ -61,9 +59,7 @@ const Navigation = () => {
                       className={`flex items-center ${
                         selected == item.page ? "bg-ula-yellow" : ""
                       } text-base p-0 m-0 h-full`}
-                      onClick={() => {
-                        onClick(item.page);
-                      }}
+                      onClick={() => setSelected(item.page)}
                     >
                       <p
                         className={`${
