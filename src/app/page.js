@@ -1,6 +1,7 @@
 import Button from "@/components/Button";
 import Banner from "@/components/Banner";
 import { FaCircle } from "react-icons/fa";
+
 const Home = () => {
   const classes = [
     "Software: CS 10A, 10B, 10C",
@@ -8,6 +9,7 @@ const Home = () => {
     "Computer systems: CS 61",
     "Software construction: CS 100",
   ];
+
   return (
     <div className="w-full flex flex-col items-center justify-center overflow-hidden">
       <div className="w-full relative">
@@ -27,7 +29,7 @@ const Home = () => {
           <p className="text-xs md:text-lg text-white py-1 m-0 text-right">
             Succeed in your lower-division CS classes!
           </p>
-          <Button name="Attend Now!" />
+          <Button name="Attend Now!" link="/calendars" />
         </div>
       </div>
       <div className="w-10/12 my-12">
@@ -57,7 +59,7 @@ const Home = () => {
               2023 quarter (Jan. 16, 2023).
             </p>
             <div className=" w-10/12 flex justify-end">
-              <Button name="learn more" />
+              <Button name="learn more" link="overview" />
             </div>
           </div>
           <img src="/map.png" className="w-1/3 bg-cover hidden sm:block" />
