@@ -8,7 +8,7 @@ const Page = () => {
   return (
     <div className="flex justify-center items-center flex-col">
       <Header title="ULAS" />
-      <div className="w-11/12 flex justify-center items-start flex-col">
+      <div className="w-10/12 mt-9 flex flex-col justify-center">
         <Banner title="Our ULAs" />
         {ulas.map((ula, index) => (
           <ULA
