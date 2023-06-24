@@ -44,10 +44,10 @@ const page = () => {
         </Row>
         <div className="flex flex-col md:flex-row justify-center items-center mb-8">
           <img
-            className="m-4"
+            className="m-4 w-1/2"
             src="https://iebusinessdaily.com/wp-content/uploads/2021/09/shutterstock_1818324299-660x330.png"
           />
-          <p className="text-base md:text-2xl w-11/12 md:w-1/2 leading-10">
+          <p className="text-base md:text-xl w-11/12 md:w-1/2 leading-10">
             Towards this, students will be hired and trained as undergraduate
             learning assistants (ULAs) to act as peer tutors for selected CSE
             classes. ULAs will provide open “help desk” hours at a specific
