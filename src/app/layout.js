@@ -16,7 +16,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${lexend.className} pt-9`}>
+      <body
+        className={`${lexend.className} pt-9 min-h-screen flex flex-col justify-between`}
+      >
         <Navigation />
         {children}
         <Footer />
