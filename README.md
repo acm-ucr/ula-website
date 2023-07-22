@@ -43,7 +43,7 @@ npm i <dependency>
 npm un <dependency>
 ```
 
-### Running the Bot Locally
+### Running the Website Locally
 
 ```bash
 npm run dev
