@@ -1,5 +1,4 @@
 import Tag from "@/components/Tag";
-import React from "react";
 
 const ULA = ({ name, description, image }) => {
   return (

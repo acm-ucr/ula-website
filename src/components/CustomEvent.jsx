@@ -1,5 +1,3 @@
-import React from "react";
-
 const CustomEvent = ({ event }) => {
   return (
     <div className="font-lexend p-1">

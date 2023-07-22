@@ -1,4 +1,3 @@
-import React from "react";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";

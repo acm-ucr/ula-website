@@ -1,15 +1,9 @@
 import Button from "@/components/Button";
 import Banner from "@/components/Banner";
 import { FaCircle } from "react-icons/fa";
+import { classes } from "@/data/classes";
 
 const Home = () => {
-  const classes = [
-    "Software: CS 10A, 10B, 10C",
-    "Algorithms: CS 111, 141",
-    "Computer systems: CS 61",
-    "Software construction: CS 100",
-  ];
-
   return (
     <div className="w-full flex flex-col items-center justify-center overflow-hidden">
       <div className="w-full relative">

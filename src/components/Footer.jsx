@@ -1,5 +1,5 @@
-import React from "react";
 import { FaEnvelope } from "react-icons/fa";
+import { contact } from "@/data/footer";
 
 const Footer = () => {
   return (
@@ -11,13 +11,13 @@ const Footer = () => {
             Questions? Contact
           </p>
           <p className="p-0 m-0 text-sm font-bold text-ula-darkGray">
-            Neftali Watinkinson
+            {contact.name}
           </p>
           <a
             className="p-0 m-0 text-sm no-underline text-ula-blue"
             href="mailto:neftaliw@ucr.edu"
           >
-            neftaliw@ucr.edu
+            {contact.email}
           </a>
         </div>
       </div>

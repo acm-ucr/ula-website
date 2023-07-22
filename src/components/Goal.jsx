@@ -1,5 +1,3 @@
-import React from "react";
-
 const Goal = ({ icon, description }) => {
   return (
     <div className="w-full h-full border-y-8 border-ula-yellow bg-ula-blue text-center flex justify-center items-center flex-col">

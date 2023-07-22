@@ -1,5 +1,3 @@
-import React from "react";
-
 const Banner = ({ title }) => {
   return (
     <div className="border-l-8 border-ula-yellow">
