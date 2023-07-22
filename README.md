@@ -46,6 +46,7 @@ npm un <dependency>
 ### Running the Website Locally
 
 ```bash
+# Open a browser at localhost:3000
 npm run dev
 ```
 
