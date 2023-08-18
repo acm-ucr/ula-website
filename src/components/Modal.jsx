@@ -1,4 +1,3 @@
-import React from "react";
 import { FaCircle, FaTimes } from "react-icons/fa";
 import Link from "next/link";
 

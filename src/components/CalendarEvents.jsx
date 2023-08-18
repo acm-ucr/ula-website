@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import moment from "moment";
 import { Calendar, momentLocalizer } from "react-big-calendar";
 import "react-big-calendar/lib/css/react-big-calendar.css";
@@ -19,20 +19,18 @@ const CalendarEvents = ({ calendar, name, color, text, border }) => {
   useEffect(() => {
     axios
       .get(
-        `https://www.googleapis.com/calendar/v3/calendars/${calendar}/events?key=${process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY}`
+        `https://www.googleapis.com/calendar/v3/calendars/${calendar}/events?key=${process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY}&singleEvents=true&orderBy=startTime`
       )
       .then((response) => {
-        const calendarEvents = response.data.items.sort((a, b) => {
+        const calendarEvents = response.data.items.map((a) => {
           if (a.start && a.end) {
             a.start = new Date(a.start.dateTime);
             a.end = new Date(a.end.dateTime);
             a.color = color;
-
             a.textColor = text;
-
             a.border = border;
           }
-          return new Date(a.start) - new Date(b.start);
+          return a;
         });
         setEvents(calendarEvents);
       })
@@ -46,7 +44,7 @@ const CalendarEvents = ({ calendar, name, color, text, border }) => {
       <section className="w-full flex justify-center items-center flex-col mt-[12vh]">
         <Tag name={name} />
         <div className="mb-5 w-11/12 flex justify-center items-center">
-          <div className="h-[110vh] w-full relative">
+          <div className="w-11/12 h-screen relative">
             <Calendar
               className="font-lexend w-full m-0 p-0"
               events={events}
