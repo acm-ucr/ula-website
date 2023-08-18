@@ -6,12 +6,6 @@ export const ulas = [
     image: "https://ucr-ula.github.io/images/cody.PNG",
   },
   {
-    name: "Diane",
-    description:
-      "I am a fourth year computer science major and I wanted to be a ULA because helping people is lots of fun and I was in the same boat before as well! A random fact about me is that my hearing is not very good so one of the words I most often say is “huh”.",
-    image: "https://ucr-ula.github.io/images/diane.jpg",
-  },
-  {
     name: "Edgar",
     description:
       "My name is Edgarventura, but I usually only go by Edgar. I’m a second third year Computer Science major who upon finding himself lost trying to navigate college life, found himself being helped by all kinds of people such as professors, counselors, and even other students. Which is why I really wanted to become a ULA, because I wanted nothing more than to return a little bit of the kindness I received back into the UCR community. A little fun fact about myself is that over the pandemic I began teaching myself how to play the harmonica, and so far I’ve been enjoying it quite a lot!",
