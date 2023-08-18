@@ -47,4 +47,10 @@ export const ulas = [
       "I am a Computer Science Major. This is my second third year at UCR, so I am a junior. I decided to join the ULA because I understand the feeling of being lost and hesitating to reach out for help, and all we need is reassurance and a little help to discover our potential. I love helping people with the resources that I have. A random fact about me is that I love eating spicy food and challenging myself to eat the spiciest that I can get. I am also a huge fan of the boyband BTS!",
     image: "https://ucr-ula.github.io/images/taneesha.jpg",
   },
+  {
+    name: "Amber",
+    description:
+      "Hi, I'm Amber and I am a 2nd year robotics major. I have received lots of help from other ULAs so I wanted to become a ULA to give back to the community. Outside of CS, I like audio production and cooking good food.",
+    image: "/amber.jpg",
+  },
 ];
