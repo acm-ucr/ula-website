@@ -51,8 +51,8 @@ const page = () => {
             Towards this, students will be hired and trained as undergraduate
             learning assistants (ULAs) to act as peer tutors for selected CSE
             classes. ULAs will provide open “help desk” hours at a specific
-            location (TBD) in Winston Chung Hall, or online through Zoom, and
-            assist students with course content, homeworks, labs, etc.
+            location (WCH 129) in Winston Chung Hall, or online through Zoom,
+            and assist students with course content, homeworks, labs, etc.
           </p>
         </div>
       </div>
