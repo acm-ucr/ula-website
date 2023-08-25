@@ -49,8 +49,7 @@ const Home = () => {
               one of their help desk hours listed in the Calendar below with any
               questions you have. It&apos;s free, and no advance registration
               required. Some sessions are held online through Zoom and others in
-              Winston Chung Hall 129, and will start in Week 2 of the Winter
-              2023 quarter (Jan. 16, 2023).
+              Winston Chung Hall 129, and will start in Week 2 of every quarter.
             </p>
             <div className=" w-10/12 flex justify-end">
               <Button name="Learn More!" link="overview" />

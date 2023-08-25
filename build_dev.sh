@@ -1,7 +1,6 @@
 #!/bin/sh
 
-#SPECIFY PATH OF FOLDER HERE
-#cd /home/projects/..........
+cd /home/projects/ula/ula-website-dev-branch
 
 # Builds the `dev` branch 
 res=$(git pull origin dev | grep Already)

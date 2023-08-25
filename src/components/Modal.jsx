@@ -55,7 +55,6 @@ const Modal = ({ event, setState }) => {
             <ListElement key={index} color={event.textColor} innerText={line} />
           ))}
       <div className="md:text-2xl text-lg p-2">
-        {" "}
         {event.description.replace(event.description.split(" ")[0], "")}{" "}
       </div>
     </div>
