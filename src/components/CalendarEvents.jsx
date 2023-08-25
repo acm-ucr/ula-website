@@ -32,7 +32,6 @@ const CalendarEvents = ({ calendar, name, color, text, border }) => {
           }
           return a;
         });
-        console.log(calendarEvents);
         setEvents(calendarEvents);
       })
       .catch((error) => {
