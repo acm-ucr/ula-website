@@ -5,12 +5,13 @@ const ListElement = ({ color, text }) => {
   return (
     <div className="flex items-center p-2">
       <FaCircle className={`${color} mr-2`} />
-      {text.includes("https://") && (
+      {text.includes("https://") ? (
         <Link className="md:text-2xl text-lg no-underline" href={text}>
           {text}
         </Link>
+      ) : (
+        <div className="md:text-2xl text-lg">{text}</div>
       )}
-      <div className="md:text-2xl text-lg">{text}</div>
     </div>
   );
 };
