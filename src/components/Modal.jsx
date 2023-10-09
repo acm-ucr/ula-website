@@ -1,25 +1,27 @@
 import { FaCircle, FaTimes } from "react-icons/fa";
 import Link from "next/link";
 
-const ListElement = ({ color, innerText }) => {
+const ListElement = ({ color, text }) => {
   return (
     <div className="flex items-center p-2">
       <FaCircle className={`${color} mr-2`} />
-      <div className="md:text-2xl text-lg"> {innerText} </div>
+      {text.includes("https://") && (
+        <Link className="md:text-2xl text-lg no-underline" href={text}>
+          {text}
+        </Link>
+      )}
+      <div className="md:text-2xl text-lg">{text}</div>
     </div>
   );
 };
 
 const Modal = ({ event, setState }) => {
   if (!event) return event && <div>No Event</div>;
-  const startTime = new Date(event.start).toLocaleTimeString(
-    navigator.language,
-    {
-      hour: "2-digit",
-      minute: "2-digit",
-    }
-  );
-  const endTime = new Date(event.end).toLocaleTimeString(navigator.language, {
+  const start = new Date(event.start).toLocaleTimeString(navigator.language, {
+    hour: "2-digit",
+    minute: "2-digit",
+  });
+  const end = new Date(event.end).toLocaleTimeString(navigator.language, {
     hour: "2-digit",
     minute: "2-digit",
   });
@@ -37,26 +39,16 @@ const Modal = ({ event, setState }) => {
           <FaTimes className="text-black p-0 m-0 hover:!text-red-500" />
         </button>
       </div>
-      {event.location
-        ? [
-            new Date(event.start).toLocaleDateString(),
-            `${startTime} - ${endTime}`,
-            event.location,
-          ].map((line, index) => (
-            <ListElement key={index} color={event.textColor} innerText={line} />
-          ))
-        : [
-            new Date(event.start).toLocaleDateString(),
-            `${startTime} - ${endTime}`,
-            <Link key={self} href={event.zoom} class="break-all">
-              {event.zoom}
-            </Link>,
-          ].map((line, index) => (
-            <ListElement key={index} color={event.textColor} innerText={line} />
-          ))}
-      <div className="md:text-2xl text-lg p-2">
-        {event.description.replace(event.description.split(" ")[0], "")}{" "}
-      </div>
+      <ListElement
+        color={event.textColor}
+        text={new Date(event.start).toLocaleDateString()}
+      />
+      <ListElement color={event.textColor} text={`${start} - ${end}`} />
+      <ListElement
+        color={event.textColor}
+        text={event.location || "Location TBD"}
+      />
+      <div className="md:text-2xl text-lg p-2">{event.description || ""}</div>
     </div>
   );
 };
