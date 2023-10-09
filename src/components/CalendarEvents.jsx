@@ -19,7 +19,13 @@ const CalendarEvents = ({ calendar, name, color, text, border }) => {
   useEffect(() => {
     axios
       .get(
-        `https://www.googleapis.com/calendar/v3/calendars/${calendar}/events?key=${process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY}&singleEvents=true&orderBy=startTime`
+        `https://www.googleapis.com/calendar/v3/calendars/${calendar}/events?key=${
+          process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY
+        }&singleEvents=true&orderBy=startTime&timeMin=${new Date(
+          new Date().getTime() - 60 * 60 * 24 * 10 * 1000
+        ).toISOString()}&timeMax=${new Date(
+          new Date().getTime() + 60 * 60 * 24 * 10 * 1000
+        ).toISOString()}`
       )
       .then((response) => {
         const calendarEvents = response.data.items.map((a) => {
