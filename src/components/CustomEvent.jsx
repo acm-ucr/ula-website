@@ -4,7 +4,6 @@ const CustomEvent = ({ event }) => {
       <p className="inline whitespace-nowrap">
         {event.summary}
         <br />
-        WCH129 &nbsp; - &nbsp;
         {new Date(event.start).toLocaleTimeString(navigator.language, {
           hour: "2-digit",
           minute: "2-digit",
