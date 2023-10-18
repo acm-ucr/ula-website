@@ -4,8 +4,8 @@ import Row from "react-bootstrap/Row";
 
 const CustomToolbar = (event) => {
   return (
-    <div className="flex justify-center items-center w-full my-3">
-      <Row className=" w-full flex justify-start items-center">
+    <div className="flex justify-center items-center w-full my-1">
+      <Row className="w-full flex justify-start items-center">
         <Col
           xs={4}
           className=" w-full flex justify-start items-center text-3xl font-lexend  font-bold"
