@@ -49,8 +49,8 @@ const CalendarEvents = ({ calendar, name, color, text, border }) => {
     events && (
       <section className="w-full flex justify-center items-center flex-col mt-[12vh]">
         <Tag name={name} />
-        <div className="mb-5 w-11/12 flex justify-center items-center">
-          <div className="w-11/12 h-screen relative">
+        <div className="w-11/12 flex justify-center items-center">
+          <div className="w-11/12 h-[80vh] relative">
             <Calendar
               className="font-lexend w-full m-0 p-0"
               events={events}

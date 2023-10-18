@@ -3,7 +3,7 @@ import { contact } from "@/data/footer";
 
 const Footer = () => {
   return (
-    <div className="w-full bg-ula-lightGray flex items-center justify-between">
+    <div className="w-full bg-ula-lightGray flex items-center justify-between mt-8">
       <div className="flex items-center">
         <FaEnvelope className="text-ula-blue text-4xl m-3" />
         <div className="flex flex-col m-2">
