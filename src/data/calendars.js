@@ -1,6 +1,6 @@
 export const calendars = [
   {
-    name: "Python (CS9A/B)",
+    name: "Python (CS9A/B/C)",
     color: "!bg-ula-yellow",
     text: "text-ula-yellow",
     border: "border-ula-yellow",
