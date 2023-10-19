@@ -21,9 +21,7 @@ const CalendarEvents = ({ calendar, name, color, text, border }) => {
       .get(
         `https://www.googleapis.com/calendar/v3/calendars/${calendar}/events?key=${
           process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY
-        }&singleEvents=true&orderBy=startTime&timeMin=${new Date(
-          new Date().getTime() - 60 * 60 * 24 * 7 * 10 * 1000
-        ).toISOString()}&timeMax=${new Date(
+        }&singleEvents=true&orderBy=startTime&timeMin=${new Date().toISOString()}&timeMax=${new Date(
           new Date().getTime() + 60 * 60 * 24 * 7 * 10 * 1000
         ).toISOString()}`
       )
