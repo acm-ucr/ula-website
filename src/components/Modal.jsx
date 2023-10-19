@@ -49,7 +49,9 @@ const Modal = ({ event, setState }) => {
         color={event.textColor}
         text={event.location || "Location TBD"}
       />
-      <div className="md:text-2xl text-lg p-2">{event.description || ""}</div>
+      <div className="md:text-2xl text-lg p-2 break-words">
+        {event.description || ""}
+      </div>
     </div>
   );
 };
