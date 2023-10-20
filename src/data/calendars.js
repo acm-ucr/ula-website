@@ -14,6 +14,13 @@ export const calendars = [
     calendar: process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_SOFTWARE,
   },
   {
+    name: "Discrete Math (CS011)",
+    color: "!bg-ula-yellow",
+    text: "text-ula-yellow",
+    border: "border-ula-yellow",
+    calendar: process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_DISCRETE,
+  },
+  {
     name: "Algorithms (CS111/141)",
     color: "!bg-ula-yellow",
     text: "text-ula-yellow",
