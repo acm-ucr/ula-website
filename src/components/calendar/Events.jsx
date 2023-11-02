@@ -4,22 +4,27 @@ import { useEffect, useState } from "react";
 import moment from "moment";
 import { Calendar, momentLocalizer } from "react-big-calendar";
 import "react-big-calendar/lib/css/react-big-calendar.css";
-import CustomToolbar from "./CustomToolbar";
-import CustomEvent from "./CustomEvent";
-import Modal from "./Modal";
+import Toolbar from "./Toolbar";
+import Event from "./Event";
+import Modal from "../Modal";
 import axios from "axios";
-import Tag from "./Tag";
+import Tag from "../Tag";
+import { calendars } from "@/data/calendars";
 
 const mLocalizer = momentLocalizer(moment);
 
-const CalendarEvents = ({ calendar, name, color, text, border }) => {
+const CalendarEvents = () => {
   const [modalEvent, setModalEvent] = useState(null);
   const [events, setEvents] = useState([]);
+  const [calendar, setCalendar] = useState(calendars["Python"]);
 
   useEffect(() => {
+    setEvents([]);
     axios
       .get(
-        `https://www.googleapis.com/calendar/v3/calendars/${calendar}/events?key=${
+        `https://www.googleapis.com/calendar/v3/calendars/${
+          calendar.calendar
+        }/events?key=${
           process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY
         }&singleEvents=true&orderBy=startTime&timeMin=${new Date().toISOString()}&timeMax=${new Date(
           new Date().getTime() + 60 * 60 * 24 * 7 * 10 * 1000
@@ -30,9 +35,9 @@ const CalendarEvents = ({ calendar, name, color, text, border }) => {
           if (a.start && a.end) {
             a.start = new Date(a.start.dateTime);
             a.end = new Date(a.end.dateTime);
-            a.color = color;
-            a.textColor = text;
-            a.border = border;
+            a.color = calendar.color;
+            a.textColor = calendar.text;
+            a.border = calendar.border;
           }
           return a;
         });
@@ -41,23 +46,30 @@ const CalendarEvents = ({ calendar, name, color, text, border }) => {
       .catch((error) => {
         console.log("Error: ", error);
       });
-  }, []);
+  }, [calendar]);
 
   return (
     events && (
-      <section className="w-full flex justify-center items-center flex-col mt-[12vh]">
-        <Tag name={name} />
+      <section className="w-full flex justify-center items-center flex-col mt-[6vh]">
+        <Tag name={calendar.name} />
         <div className="w-11/12 flex justify-center items-center">
           <div className="w-11/12 h-[80vh] relative">
             <Calendar
               className="font-lexend w-full m-0 p-0"
               events={events}
               localizer={mLocalizer}
-              defaultView="month"
-              views={["month"]}
+              defaultView="week"
+              min={new Date(0, 0, 0, 9, 0, 0)}
+              max={new Date(0, 0, 0, 21, 0, 0)}
               components={{
-                event: CustomEvent,
-                toolbar: CustomToolbar,
+                event: Event,
+                toolbar: (props) => (
+                  <Toolbar
+                    {...props}
+                    setCalendar={setCalendar}
+                    calendar={calendar}
+                  />
+                ),
               }}
               eventPropGetter={(event) => {
                 return { className: `${event.color}` };
