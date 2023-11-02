@@ -1,8 +1,13 @@
 import React from "react";
 
-const Tag = ({ title, onClick }) => {
+const Tag = ({ title, onClick, selected }) => {
   return (
-    <div onClick={onClick} className="px-3 py-2 bg-ula-yellow rounded">
+    <div
+      onClick={onClick}
+      className={`px-2 py-1 border-ula-yellow border-3 rounded whitespace-nowrap mx-2 hover:bg-ula-yellow hover:cursor-pointer ${
+        selected && "bg-ula-yellow"
+      }`}
+    >
       {title}
     </div>
   );

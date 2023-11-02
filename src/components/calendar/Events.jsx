@@ -19,7 +19,7 @@ const CalendarEvents = () => {
   const [calendar, setCalendar] = useState(calendars["Python"]);
 
   useEffect(() => {
-    console.log("called", calendar);
+    setEvents([]);
     axios
       .get(
         `https://www.googleapis.com/calendar/v3/calendars/${
@@ -50,7 +50,7 @@ const CalendarEvents = () => {
 
   return (
     events && (
-      <section className="w-full flex justify-center items-center flex-col mt-[12vh]">
+      <section className="w-full flex justify-center items-center flex-col mt-[6vh]">
         <Tag name={calendar.name} />
         <div className="w-11/12 flex justify-center items-center">
           <div className="w-11/12 h-[80vh] relative">
@@ -58,12 +58,17 @@ const CalendarEvents = () => {
               className="font-lexend w-full m-0 p-0"
               events={events}
               localizer={mLocalizer}
-              defaultView="month"
-              views={["month"]}
+              defaultView="week"
+              min={new Date(0, 0, 0, 9, 0, 0)}
+              max={new Date(0, 0, 0, 21, 0, 0)}
               components={{
                 event: Event,
                 toolbar: (props) => (
-                  <Toolbar {...props} setCalendar={setCalendar} />
+                  <Toolbar
+                    {...props}
+                    setCalendar={setCalendar}
+                    calendar={calendar}
+                  />
                 ),
               }}
               eventPropGetter={(event) => {
