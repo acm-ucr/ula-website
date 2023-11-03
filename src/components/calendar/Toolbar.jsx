@@ -5,8 +5,8 @@ import { calendars } from "@/data/calendars";
 const CustomToolbar = ({ date, onNavigate, calendar, setCalendar }) => {
   return (
     <div className="flex justify-center items-center w-full my-3">
-      <div className="w-full flex justify-between items-center">
-        <div className=" w-full flex justify-start items-center text-3xl font-lexend font-bold">
+      <div className="w-full flex justify-between items-center flex-col md:flex-row">
+        <div className="w-full md:w-1/3 flex justify-center md:justify-start items-center text-3xl font-lexend font-bold">
           <FaArrowLeft
             onClick={() => onNavigate("PREV")}
             className="hover:text-acm-darkgray hover:cursor-pointer"
@@ -28,7 +28,7 @@ const CustomToolbar = ({ date, onNavigate, calendar, setCalendar }) => {
             className="hover:text-acm-darkgray hover:cursor-pointer"
           />
         </div>
-        <div className="flex w-full justify-between">
+        <div className="flex w-full justify-center md:justify-end flex-wrap md:flex-nowrap">
           <Tag
             title="CS 009ABC"
             onClick={() => setCalendar(calendars["Python"])}
