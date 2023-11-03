@@ -16,7 +16,7 @@ const Navigation = () => {
       <Navbar.Brand className="p-0">
         <Link
           eventkey="1"
-          className="p-0 text-white no-underline font-medium text-2xl"
+          className="p-0 text-white no-underline font-medium text-xl"
           href="/"
         >
           Undergraduate Learning Assistants
