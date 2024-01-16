@@ -1,27 +1,9 @@
 export const ulas = [
   {
-    name: "Cody",
-    description:
-      "I am Cody, a fourth year computer science major. I am excited to be a ULA because learning to solve problems individually is my passion, so in my freshman year, I loved explaining my strategies to learn and succeed in any class while helping my friends with specific classes. A fun fact about me is that I am learning Hindi!",
-    image: "/cody.webp",
-  },
-  {
-    name: "Edgar",
-    description:
-      "My name is Edgarventura, but I usually only go by Edgar. I’m a fourth year Computer Science major who upon finding himself lost trying to navigate college life, found himself being helped by all kinds of people such as professors, counselors, and even other students. Which is why I really wanted to become a ULA, because I wanted nothing more than to return a little bit of the kindness I received back into the UCR community. A little fun fact about myself is that over the pandemic I began teaching myself how to play the harmonica, and so far I’ve been enjoying it quite a lot!",
-    image: "/edgar.webp",
-  },
-  {
     name: "Joshua",
     description:
       "Hi! My name is Joshua and I’m a senior computer science major. I wanted to be a ULA because I enjoy teaching and helping others, and I have a passion for what we’re learning in these classes. A random fact about me is that I am a huge basketball nerd.",
     image: "/joshua.webp",
-  },
-  {
-    name: "Minsoo",
-    description:
-      "Hey there! I'm Minsoo, a senior Computer Science undergrad. Through my role as a ULA, I've passionately guided students to excel and tap into their full potential in class. I'm always eager to share insights and strategies that make tough courses more manageable. Drop by my office hours—I'd love to chat! On a lighter note, I'm a massive CSGO fan. If you're ever up for a game, just let me know. 😊",
-    image: "/minsoo.webp",
   },
   {
     name: "Nathan",
@@ -34,12 +16,6 @@ export const ulas = [
     description:
       "Hey! My name is Samarth, and I am a fourth year computer science major for ULA. I wanted to be a ULA because I love learning and understanding computer science topics, and I think this is a great opportunity to pass on what I know and problem solve with anybody who is looking for help in their classes. A fun fact about me is that I play 4 instruments, and my favorite one to play is the Sousaphone!",
     image: "/samarth.webp",
-  },
-  {
-    name: "Taneesha",
-    description:
-      "Hi, my name is Taneesha, and I am a Computer Science Major. This is my fourth year at UCR, so I am a junior. I decided to join the ULA because I understand the feeling of being lost and hesitating to reach out for help, and all we need is reassurance and a little help to discover our potential. I love helping people with the resources that I have. A random fact about me is that I love eating spicy food and challenging myself to eat the spiciest that I can get. I am also a huge fan of the boyband BTS!",
-    image: "/taneesha.webp",
   },
   {
     name: "Amber",
@@ -106,5 +82,11 @@ export const ulas = [
     description:
       "Hello! I'm Jacob, a second-year Computer Science major, and I am a ULA tutor because I enjoy helping others. In my free time, I love to play soccer, and my favorite team is Barcelona.",
     image: "/jacob.webp",
+  },
+  {
+    name: "Thomas",
+    description:
+      "Hi! I'm Thomas, a second year computer science major. I joined ULA to help others understand course material while practicing communication skills. I like baking bread and other pastries in my free time.",
+    image: "/thomas.jpg",
   },
 ];
