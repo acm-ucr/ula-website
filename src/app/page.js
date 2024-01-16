@@ -41,7 +41,7 @@ const Home = () => {
               ))}
             </div>
             <img
-              src="/map.png"
+              src="/map.webp"
               className="m-2 w-10/12 bg-cover sm:hidden block"
             />
             <p className="text-sm md:text-lg p-0 text-right w-11/12 md:w-10/12 mt-12">
@@ -55,7 +55,7 @@ const Home = () => {
               <Button name="Learn More!" link="overview" />
             </div>
           </div>
-          <img src="/map.png" className="w-1/3 bg-cover hidden sm:block" />
+          <img src="/map.webp" className="w-1/3 bg-cover hidden sm:block" />
         </div>
       </div>
     </div>
