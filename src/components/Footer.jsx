@@ -21,7 +21,7 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      <img src="/bcoeLogo.png" className="w-1/5 mr-5" />
+      <img src="/bcoeLogo.webp" className="w-1/5 mr-5" />
     </div>
   );
 };
