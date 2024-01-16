@@ -87,6 +87,6 @@ export const ulas = [
     name: "Thomas",
     description:
       "Hi! I'm Thomas, a second year computer science major. I joined ULA to help others understand course material while practicing communication skills. I like baking bread and other pastries in my free time.",
-    image: "/thomas.jpg",
+    image: "/thomas.webp",
   },
 ];
