@@ -1,6 +1,5 @@
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import Tag from "./Tag";
-import { calendars } from "@/data/calendars";
 
 const CustomToolbar = ({ date, onNavigate, calendar, setCalendar }) => {
   return (
@@ -31,32 +30,32 @@ const CustomToolbar = ({ date, onNavigate, calendar, setCalendar }) => {
         <div className="flex w-full justify-center md:justify-end flex-wrap md:flex-nowrap">
           <Tag
             title="CS 009ABC"
-            onClick={() => setCalendar(calendars["Python"])}
+            onClick={() => setCalendar(0)}
             selected={calendar.name === "Python (CS9A/B/C)"}
           />
           <Tag
             title="CS 010ABC"
-            onClick={() => setCalendar(calendars["Software"])}
+            onClick={() => setCalendar(1)}
             selected={calendar.name === "Software (CS10A/B/C)"}
           />
           <Tag
             title="CS 011"
-            onClick={() => setCalendar(calendars["Discrete"])}
+            onClick={() => setCalendar(2)}
             selected={calendar.name === "Discrete Math (CS011)"}
           />
           <Tag
             title="CS 061"
-            onClick={() => setCalendar(calendars["Architecture"])}
+            onClick={() => setCalendar(3)}
             selected={calendar.name === "Computer Systems (CS61)"}
           />
           <Tag
             title="CS 100"
-            onClick={() => setCalendar(calendars["Construction"])}
+            onClick={() => setCalendar(4)}
             selected={calendar.name === "Software Construction (CS100)"}
           />
           <Tag
             title="CS 111/141"
-            onClick={() => setCalendar(calendars["Algorithms"])}
+            onClick={() => setCalendar(5)}
             selected={calendar.name === "Algorithms (CS111/141)"}
           />
         </div>

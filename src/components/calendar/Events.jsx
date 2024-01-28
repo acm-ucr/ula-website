@@ -7,7 +7,6 @@ import "react-big-calendar/lib/css/react-big-calendar.css";
 import Toolbar from "./Toolbar";
 import Event from "./Event";
 import Modal from "../Modal";
-import axios from "axios";
 import Tag from "../Tag";
 import { calendars } from "@/data/calendars";
 
@@ -15,48 +14,53 @@ const mLocalizer = momentLocalizer(moment);
 
 const CalendarEvents = () => {
   const [modalEvent, setModalEvent] = useState(null);
-  const [events, setEvents] = useState([]);
-  const [calendar, setCalendar] = useState(calendars["Python"]);
+  const [events, setEvents] = useState(null);
+  const [current, setCurrent] = useState(0);
 
   useEffect(() => {
-    setEvents([]);
-    axios
-      .get(
-        `https://www.googleapis.com/calendar/v3/calendars/${
-          calendar.calendar
-        }/events?key=${
-          process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY
-        }&singleEvents=true&orderBy=startTime&timeMin=${new Date().toISOString()}&timeMax=${new Date(
-          new Date().getTime() + 60 * 60 * 24 * 7 * 10 * 1000
-        ).toISOString()}`
-      )
-      .then((response) => {
-        const calendarEvents = response.data.items.map((a) => {
-          if (a.start && a.end) {
-            a.start = new Date(a.start.dateTime);
-            a.end = new Date(a.end.dateTime);
-            a.color = calendar.color;
-            a.textColor = calendar.text;
-            a.border = calendar.border;
+    Promise.all(
+      calendars.map(({ calendar }) =>
+        fetch(
+          `https://www.googleapis.com/calendar/v3/calendars/${calendar}/events?key=${
+            process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_API_KEY
+          }&singleEvents=true&orderBy=startTime&timeMin=${new Date().toISOString()}&timeMax=${new Date(
+            new Date().getTime() + 60 * 60 * 24 * 7 * 10 * 1000
+          ).toISOString()}`,
+          {
+            method: "GET",
           }
-          return a;
-        });
-        setEvents(calendarEvents);
-      })
-      .catch((error) => {
-        console.log("Error: ", error);
+        )
+      )
+    )
+      .then((results) => Promise.all(results.map((r) => r.json())))
+      .then((output) => {
+        console.log(output);
+        const finalEvents = output.map(({ items }, index) =>
+          items.map((a) => {
+            if (a.start && a.end) {
+              a.start = new Date(a.start.dateTime);
+              a.end = new Date(a.end.dateTime);
+              a.color = calendars[index].color;
+              a.textColor = calendars[index].text;
+              a.border = calendars[index].border;
+            }
+            return a;
+          })
+        );
+
+        setEvents(finalEvents);
       });
-  }, [calendar]);
+  }, []);
 
   return (
     events && (
       <section className="w-full flex justify-center items-center flex-col mt-[6vh]">
-        <Tag name={calendar.name} />
+        <Tag name={calendars[current].name} />
         <div className="w-11/12 flex justify-center items-center">
           <div className="w-11/12 h-[80vh] relative">
             <Calendar
               className="font-lexend w-full m-0 p-0"
-              events={events}
+              events={events[current]}
               localizer={mLocalizer}
               defaultView="week"
               min={new Date(0, 0, 0, 9, 0, 0)}
@@ -66,8 +70,8 @@ const CalendarEvents = () => {
                 toolbar: (props) => (
                   <Toolbar
                     {...props}
-                    setCalendar={setCalendar}
-                    calendar={calendar}
+                    setCalendar={setCurrent}
+                    calendar={{ name: calendars[current].name }}
                   />
                 ),
               }}
