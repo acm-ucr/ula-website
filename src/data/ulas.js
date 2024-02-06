@@ -89,4 +89,40 @@ export const ulas = [
       "Hi! I'm Thomas, a second year computer science major. I joined ULA to help others understand course material while practicing communication skills. I like baking bread and other pastries in my free time.",
     image: "/thomas.webp",
   },
+  {
+    name: "Connor",
+    description:
+      "Hello, my name is Connor and I’m a third year computer engineering major! I wanted to become a ULA because I greatly enjoy talking about and explaining anything related to computer science and engineering in addition to wanting to meet new people in computer science at UCR! I love to talk about anything computer science related, music, and pets, especially dogs!",
+    image: "/connor.jpg",
+  },
+  {
+    name: "Joel",
+    description:
+      "Hey! I'm Joel, a second-year CS major. I always loved teaching and helping others with homework so I got into ULA to do just that. I love sports, gym, reading, listening to & playing music, and videogames. Feel free to talk me and send me your favorite song!",
+    image: "/joel.jpg",
+  },
+  {
+    name: "Linda",
+    description:
+      "Hello, I'm Linda! I'm a junior computer science major and my goal as a ULA is to give back to my peers and make computer science feel less intimidating to others in similar positions as myself when I first began my studies. I love baking, arts and crafts, and showering my cat with love!",
+    image: "/linda.jpg",
+  },
+  {
+    name: "Raffe",
+    description:
+      "Hello y'all! My name is Raffe and I'm a third year computer science major. I joined ULA because I wanted to help students learn and enjoy the topics they are studying. I was also inspired by a previous ULA who taught me and many other students very well. Something I like to do is learn about how other people approach learning.",
+    image: "/raffe.jpg",
+  },
+  {
+    name: "Ramya",
+    description:
+      "Hi, my name is Ramya and I’m a second year CS major. I wanted to be a ULA because I enjoy tutoring and I want to do what ULA did for me. In my free time I love to spend time with my dog!",
+    image: "/ramya.jpg",
+  },
+  {
+    name: "Terence",
+    description:
+      "Hi everyone! My name is Terence and I’m a fourth year computer science major. I became a ULA to help students learn to problem solve independently. In my free time, I also teach music to elementary and high school students.",
+    image: "/terence.jpeg",
+  },
 ];
