@@ -9,6 +9,8 @@ import Event from "./Event";
 import Modal from "../Modal";
 import Tag from "../Tag";
 import { calendars } from "@/data/calendars";
+import Link from "next/link";
+import { FaPlus } from "react-icons/fa";
 
 const mLocalizer = momentLocalizer(moment);
 
@@ -34,7 +36,6 @@ const CalendarEvents = () => {
     )
       .then((results) => Promise.all(results.map((r) => r.json())))
       .then((output) => {
-        console.log(output);
         const finalEvents = output.map(({ items }, index) =>
           items.map((a) => {
             if (a.start && a.end) {
@@ -56,8 +57,8 @@ const CalendarEvents = () => {
     events && (
       <section className="w-full flex justify-center items-center flex-col mt-[6vh]">
         <Tag name={calendars[current].name} />
-        <div className="w-11/12 flex justify-center items-center">
-          <div className="w-11/12 h-[80vh] relative">
+        <div className="w-10/12 flex justify-center items-center">
+          <div className="w-full h-[80vh] relative">
             <Calendar
               className="font-lexend w-full m-0 p-0"
               events={events[current]}
@@ -98,6 +99,16 @@ const CalendarEvents = () => {
             />
             <Modal event={modalEvent} setState={setModalEvent} />
           </div>
+        </div>
+        <div className="flex justify-end w-10/12 my-2">
+          <Link
+            href={calendars[current].share}
+            target="_blank"
+            className="flex items-center rounded-lg px-3 py-2 no-underline text-black font-semibold hover:bg-ula-yellow"
+          >
+            <FaPlus className="mr-2" />
+            Add to Calendar
+          </Link>
         </div>
       </section>
     )
