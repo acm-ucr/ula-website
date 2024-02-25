@@ -32,7 +32,7 @@ const CustomToolbar = ({ date, onNavigate, current }) => {
         <div className="flex w-full justify-center md:justify-end flex-wrap md:flex-nowrap">
           {Object.entries(calendars).map(([search, { tag }], index) => (
             <Link
-              href={`/calendars?current=${search}`}
+              href={`/calendars/${search}`}
               key={index}
               className="no-underline text-ula-black"
             >
