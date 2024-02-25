@@ -1,9 +1,8 @@
-"use client";
-
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { FaDiscord } from "react-icons/fa";
 
 const Navigation = () => {
   return (
@@ -19,7 +18,8 @@ const Navigation = () => {
           className="p-0 text-white no-underline font-medium text-xl"
           href="/"
         >
-          Undergraduate Learning Assistants
+          <p className="hidden md:inline">Undergraduate Learning Assistants</p>
+          <p className="inline md:hidden">ULA</p>
         </Link>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="navbar-nav" />
@@ -31,7 +31,7 @@ const Navigation = () => {
             href="/"
             className={`${
               usePathname() === "/" ? "!bg-ula-yellow text-black" : "text-white"
-            } mb-0 py-1 px-3 no-underline ml-auto !text-xl whitespace-nowrap w-full text-center hover:cursor-pointer`}
+            } mb-0 no-underline ml-auto !text-xl whitespace-nowrap w-full text-center hover:cursor-pointer`}
           >
             Home
           </Nav.Link>
@@ -43,7 +43,7 @@ const Navigation = () => {
               usePathname() === "/overview"
                 ? "!bg-ula-yellow text-black"
                 : "text-white"
-            } mb-0 py-1 px-3 no-underline ml-auto !text-xl whitespace-nowrap w-full text-center hover:cursor-pointer`}
+            } mb-0 no-underline ml-auto !text-xl whitespace-nowrap w-full text-center hover:cursor-pointer`}
           >
             Overview
           </Nav.Link>
@@ -55,7 +55,7 @@ const Navigation = () => {
               usePathname() === "/calendars"
                 ? "!bg-ula-yellow text-black"
                 : "text-white"
-            } mb-0 py-1 px-3 no-underline ml-auto !text-xl whitespace-nowrap w-full text-center hover:cursor-pointer`}
+            } mb-0 no-underline ml-auto !text-xl whitespace-nowrap w-full text-center hover:cursor-pointer`}
           >
             Calendars
           </Nav.Link>
@@ -67,9 +67,18 @@ const Navigation = () => {
               usePathname() === "/ulas"
                 ? "!bg-ula-yellow text-black"
                 : "text-white"
-            } mb-0 py-1 px-3 no-underline ml-auto !text-xl whitespace-nowrap w-full text-center hover:cursor-pointer`}
+            } mb-0 no-underline ml-auto !text-xl whitespace-nowrap w-full text-center hover:cursor-pointer`}
           >
             ULAs
+          </Nav.Link>
+          <Nav.Link
+            as={Link}
+            eventkey="6"
+            target="_blank"
+            href="https://discord.com/invite/BUvwNdB6eH"
+            className="!flex items-center justify-center text-white ml-auto mb-0 px-3 no-underline !text-xl whitespace-nowrap w-full hover:cursor-pointer"
+          >
+            <FaDiscord className="text-3xl" />
           </Nav.Link>
         </Nav>
       </Navbar.Collapse>
