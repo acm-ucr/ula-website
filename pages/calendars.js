@@ -50,6 +50,7 @@ Page.getInitialProps = async ({ query }) => {
       details.summary = a.summary;
       details.description = a.description;
       details.location = a.location;
+      details.htmlLink = a.htmlLink;
     }
     return details;
   });
