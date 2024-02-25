@@ -1,4 +1,4 @@
-import Tag from "@/components/Tag";
+import Tag from "./Tag";
 
 const ULA = ({ name, description, image }) => {
   return (
