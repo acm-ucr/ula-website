@@ -3,11 +3,18 @@ import Header from "../components/Header";
 import Events from "@/components/calendar/Events";
 
 const Page = ({ events, name, share, tag }) => {
+  const jsonEvents = JSON.parse(events).map((event) => {
+    event["start"] = new Date(event["start"]);
+    event["end"] = new Date(event["end"]);
+
+    return event;
+  });
+
   return (
     <div>
       <title>Calendars</title>
       <Header title="Calendars" />
-      <Events events={events} name={name} share={share} tag={tag} />;
+      <Events events={jsonEvents} name={name} share={share} tag={tag} />;
     </div>
   );
 };
@@ -32,15 +39,20 @@ Page.getInitialProps = async ({ query }) => {
   const { items } = await response.json();
 
   const events = items.map((a) => {
+    const details = {};
+
     if (a.start && a.end) {
-      a.start = new Date(a.start.dateTime);
-      a.end = new Date(a.end.dateTime);
-      a.color = color;
-      a.textColor = text;
-      a.border = border;
+      details.start = new Date(a.start.dateTime);
+      details.end = new Date(a.end.dateTime);
+      details.color = color;
+      details.textColor = text;
+      details.border = border;
+      details.summary = a.summary;
+      details.description = a.description;
+      details.location = a.location;
     }
-    return a;
+    return details;
   });
 
-  return { events, name, share, tag };
+  return { events: JSON.stringify(events), name, share, tag };
 };
