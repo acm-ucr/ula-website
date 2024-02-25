@@ -3,8 +3,6 @@ import Header from "../components/Header";
 import Events from "@/components/calendar/Events";
 
 const Page = ({ events, name, share, tag }) => {
-  console.log(events);
-
   return (
     <div>
       <title>Calendars</title>
@@ -43,8 +41,6 @@ Page.getInitialProps = async ({ query }) => {
     }
     return a;
   });
-
-  console.log(events);
 
   return { events, name, share, tag };
 };
