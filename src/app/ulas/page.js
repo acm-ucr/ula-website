@@ -1,7 +1,7 @@
-import Header from "../components/Header";
-import ULA from "../components/ULA";
-import { ulas } from "../data/ulas";
-import Banner from "../components/Banner";
+import Header from "@/components/Header";
+import ULA from "@/components/ULA";
+import { ulas } from "@/data/ulas";
+import Banner from "@/components/Banner";
 
 const Page = () => {
   return (

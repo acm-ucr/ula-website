@@ -1,6 +1,6 @@
-import Banner from "../components/Banner";
-import Goal from "../components/Goal";
-import Header from "../components/Header";
+import Banner from "@/components/Banner";
+import Goal from "@/components/Goal";
+import Header from "@/components/Header";
 import { FaBook, FaInfinity } from "react-icons/fa";
 import { BsPeopleFill } from "react-icons/bs";
 import { Col, Row } from "react-bootstrap";
