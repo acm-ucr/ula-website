@@ -1,23 +1,5 @@
 export const ulas = [
   {
-    name: "Joshua",
-    description:
-      "Hi! My name is Joshua and I’m a senior computer science major. I wanted to be a ULA because I enjoy teaching and helping others, and I have a passion for what we’re learning in these classes. A random fact about me is that I am a huge basketball nerd.",
-    image: "/joshua.webp",
-  },
-  {
-    name: "Nathan",
-    description:
-      "Hello! My name is Nathan and I’m a fourth year computer science major. I want to become a ULA because I enjoy teaching about technical topics. I also enjoy talking through and explaining problems. A fun fact about me is that I love playing in cybersecurity competitions.",
-    image: "/nathan.webp",
-  },
-  {
-    name: "Samarth",
-    description:
-      "Hey! My name is Samarth, and I am a fourth year computer science major for ULA. I wanted to be a ULA because I love learning and understanding computer science topics, and I think this is a great opportunity to pass on what I know and problem solve with anybody who is looking for help in their classes. A fun fact about me is that I play 4 instruments, and my favorite one to play is the Sousaphone!",
-    image: "/samarth.webp",
-  },
-  {
     name: "Amber",
     description:
       "Hi, I'm Amber and I am a 2nd year robotics major. I have received lots of help from other ULAs so I wanted to become a ULA to give back to the community. Outside of CS, I like audio production and cooking good food.",
