@@ -12,7 +12,7 @@ const Home = () => {
           src="https://admissions.ucr.edu/sites/default/files/styles/article_header_l/public/2021-10/ucr_submit-your-uc-application-to-ucr_blog.jpg?h=3f097dd9&itok=3qBGU0ZF"
         />
         <div className="absolute h-[50vh] w-[150vh] top-0 bg-ula-darkblue skew-x-[35deg] left-1/3 sm:left-1/2" />
-        <div className="absolute right-12 top-8 items-end justify-center flex flex-col w-1/2">
+        <div className="absolute right-12 top-8 items-end justify-center flex flex-col w-1/2 pt-12">
           <p className="font-bold text-base md:text-2xl text-ula-yellow p-0 m-0 text-right">
             Welcome to UCR CSE&apos;s
           </p>
