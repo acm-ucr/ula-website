@@ -6,18 +6,6 @@ export const ulas = [
     image: "/amber.webp",
   },
   {
-    name: "Angelika",
-    description:
-      "Hey everyone! My name is Angie and I am a fourth-year CS major. I am happy that I get to be a ULA this year because I love helping out students with topics I have struggled understanding before. A fun fact about myself is that I play Overwatch 😄",
-    image: "/angie.webp",
-  },
-  {
-    name: "Yuchen",
-    description:
-      "Howdy! My name is Yuchen and I am a 4th year computer science major. I enjoy helping and tutoring others especially when it comes to CS as it also gives me a chance to build upon my knowledge of the topic too! Some fun facts about me are that I love all things arts and I have random bouts of obsession when it comes to hobbies or games (tft is my current one).",
-    image: "/yuchen.webp",
-  },
-  {
     name: "Kevin",
     description:
       "Hey! My name is Kevin and I'm a sophomore majoring in CSBA. I'm excited to have the opportunity to be a ULA since I enjoy helping others out. If you have any questions about coursework, need clarification on anything, or just want to chat, just let me know! A little fun fact about me is that I just learned how to roller skate and I fall like only once every time I skate.",
@@ -100,11 +88,5 @@ export const ulas = [
     description:
       "Hi, my name is Ramya and I’m a second year CS major. I wanted to be a ULA because I enjoy tutoring and I want to do what ULA did for me. In my free time I love to spend time with my dog!",
     image: "/ramya.webp",
-  },
-  {
-    name: "Terence",
-    description:
-      "Hi everyone! My name is Terence and I’m a fourth year computer science major. I became a ULA to help students learn to problem solve independently. In my free time, I also teach music to elementary and high school students.",
-    image: "/terence.webp",
   },
 ];
