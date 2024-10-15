@@ -27,7 +27,7 @@ const Home = () => {
         </div>
       </div>
       <div className="w-10/12 my-12">
-        <div className="my-8">
+        {/* <div className="my-8">
           <Banner title="Call for Undergraduate Learning Assistants" />
           <div className="text-sm md:text-lg p-0 text-left w-11/12 md:w-10/12 mt-12">
             Undergraduate students currently enrolled at UCR are invited to
@@ -64,7 +64,7 @@ const Home = () => {
               link="https://docs.google.com/forms/d/e/1FAIpQLSf-An4oXOWRpdOtpFmYXinS7eivYvhpJgupBTL8kWDwa5ascw/viewform"
             />
           </div>
-        </div>
+        </div> */}
         <div className="my-8">
           <Banner title="Are you an undergrad who wants help in one of these CSE courses?" />
         </div>
