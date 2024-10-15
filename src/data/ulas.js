@@ -129,6 +129,6 @@ export const ulas = [
     name: "Sahana",
     description:
       "Hi! I'm Sahana, a second year computer science with business applications major! I joined ULA to be able to help a wider range of students in multiple classes. I love taking photos, crocheting, and reading :D Please feel free to reach out if you want have any questions or you just want to talk!",
-    image: "/aahana.webp",
+    image: "/sahana.webp",
   },
 ];
