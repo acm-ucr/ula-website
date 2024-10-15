@@ -131,4 +131,10 @@ export const ulas = [
       "Hi! I'm Sahana, a second year computer science with business applications major! I joined ULA to be able to help a wider range of students in multiple classes. I love taking photos, crocheting, and reading :D Please feel free to reach out if you want have any questions or you just want to talk!",
     image: "/sahana.webp",
   },
+  {
+    name: "Anthony",
+    description:
+      "Hey everyone ! I'm Anthony Padilla (Yes like from Smosh), and I'm a 4th year CS major with a Minor in Math. As a ULA I want to do my absolute best in helping everyone and anyone become their best academic self, as I firmly believe hard work triumphs all. Other than School, I'm absolutley obsessed with JJK (ask me !), Rock-Climing, and I love going to concerts.",
+    image: "/anthony.webp",
+  },
 ];
