@@ -44,14 +44,8 @@ export const ulas = [
   {
     name: "Menthy",
     description:
-      "Good morning! I'm Menthy, a second-year Computer Science major. I always enjoy helping others in my classes because I think it is not only beneficial for them but also a great opportunity for me to review the course content. If you need help, please don't hesitate to approach me. Also, if you just want to hang out, feel free to come to me. I love exploring different restaurants, and I'm also a big fan of One Piece. See you!",
+      "Good morning! I'm Menthy, a third-year Computer Science major. I always enjoy helping others in my classes because I think it is not only beneficial for them but also a great opportunity for me to review the course content. If you need help, please don't hesitate to approach me. Also, if you just want to hang out, feel free to come to me. I love exploring different restaurants, and I'm also a big fan of One Piece. See you!",
     image: "/menthy.webp",
-  },
-  {
-    name: "Jacob",
-    description:
-      "Hello! I'm Jacob, a second-year Computer Science major, and I am a ULA tutor because I enjoy helping others. In my free time, I love to play soccer, and my favorite team is Barcelona.",
-    image: "/jacob.webp",
   },
   {
     name: "Thomas",
@@ -88,5 +82,59 @@ export const ulas = [
     description:
       "Hi, my name is Ramya and I’m a second year CS major. I wanted to be a ULA because I enjoy tutoring and I want to do what ULA did for me. In my free time I love to spend time with my dog!",
     image: "/ramya.webp",
+  },
+  {
+    name: "Amshu",
+    description:
+      "I am a second year computer science student. I wanted to become an ULA because I enjoy teaching other students and wanted to help others the same way other ULA’s have helped me in the past. In my free time I enjoy gardening, baking, and playing with my dog! Please let me know if u need more information.",
+    image: "/amshu.webp",
+  },
+  {
+    name: "Tingxuan",
+    description:
+      "Hi, hello! I'm Ting, a third-year Computer Science major. Excited to be a ULA because I love seeing and helping others succeed. Don't hesitate to come chat if you need help for your classes or just wanna talk about art, music, D&D, cooking—anything, really. Or to see pictures of my cat, totally valid. :]",
+    image: "/tingxuan.webp",
+  },
+  {
+    name: "Kevin",
+    description:
+      "Hi everyone! My name is Kevin, and I am a second year computer science major. I love getting to meet others interested in computing, and love getting to talk with others about computer science! I love cats, baking, Hamilton, and getting to watch new TV Shows in my spare time!",
+    image: "/kevinL.webp",
+  },
+  {
+    name: "Mailyn",
+    description:
+      "Hi everyone! My name is Mailyn and I'm a fourth year computer science major. I joined ULA because I really enjoy the program, and it always been really friendly and helpful to me when I came. I want to hopefully be able to do the same for other students. In my free time, I like to go to the gym and play the guitar!",
+    image: "/mailyn.webp",
+  },
+  {
+    name: "Athena",
+    description:
+      "Hi, I'm Athena and I am a second-year computer science major. I became a ULA because I want to help others the same way others have helped me and so that I can learn how to better communicate with other people. In my free time, I love to draw/paint and read fantasy series.",
+    image: "/athena.webp",
+  },
+  {
+    name: "Natalie",
+    description:
+      "Hi, my name is Natalie! I'm a 3rd-year cs major. I have always enjoyed helping others in school whether I had taken the class or not and ULA is a great place for me to help more people . I like to listen to music, take naps, and hang out with friends whenever I have free time.",
+    image: "/natalie.webp",
+  },
+  {
+    name: "Aaryan",
+    description:
+      "Hi, my name's Aaryan, and I'm a computer science major! I am passionate about computer science and enjoy video games. As a ULA, I strive to help others learn and grow in their understanding of technology and coding.",
+    image: "/aaryan.webp",
+  },
+  {
+    name: "Sahana",
+    description:
+      "Hi! I'm Sahana, a second year computer science with business applications major! I joined ULA to be able to help a wider range of students in multiple classes. I love taking photos, crocheting, and reading :D Please feel free to reach out if you want have any questions or you just want to talk!",
+    image: "/sahana.webp",
+  },
+  {
+    name: "Anthony",
+    description:
+      "Hey everyone ! I'm Anthony Padilla (Yes like from Smosh), and I'm a 4th year CS major with a Minor in Math. As a ULA I want to do my absolute best in helping everyone and anyone become their best academic self, as I firmly believe hard work triumphs all. Other than School, I'm absolutley obsessed with JJK (ask me !), Rock-Climing, and I love going to concerts.",
+    image: "/anthony.webp",
   },
 ];
