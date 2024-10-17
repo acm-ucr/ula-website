@@ -137,4 +137,10 @@ export const ulas = [
       "Hey everyone ! I'm Anthony Padilla (Yes like from Smosh), and I'm a 4th year CS major with a Minor in Math. As a ULA I want to do my absolute best in helping everyone and anyone become their best academic self, as I firmly believe hard work triumphs all. Other than School, I'm absolutley obsessed with JJK (ask me !), Rock-Climing, and I love going to concerts.",
     image: "/anthony.webp",
   },
+  {
+    name: "Angel",
+    description:
+      "Hi! My name is Angel Franco I am a 3rd year Math major with a concentration in Computational Math. I became a ULA because I like to help. If you ever need help with CS010ABC I got you! If you like One Piece we can always talk about that too! (Just don't spoil because I don't read the Manga)",
+    image: "/angel.webp",
+  },
 ];
