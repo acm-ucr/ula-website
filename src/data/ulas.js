@@ -143,4 +143,16 @@ export const ulas = [
       "Hi! My name is Angel Franco I am a 3rd year Math major with a concentration in Computational Math. I became a ULA because I like to help. If you ever need help with CS010ABC I got you! If you like One Piece we can always talk about that too! (Just don't spoil because I don't read the Manga)",
     image: "/angel.webp",
   },
+  {
+    name: "Stanley",
+    description:
+      "Hello everyone, I'm Stanley a 2nd year computer science major. I joined ULA because  of the assistance I have received throughout my time here at UCR during the CS010 series. Now, I want to pay it forward through my time as an ULA. In my free time, I love watching F1 (go papaya!), hitting the gym, and playing badminton.",
+    image: "/stanley.webp",
+  },
+  {
+    name: "Ishaan",
+    description:
+      "Hello My name is Ishaan Venkatraman and I am currently a second-year Computer Science Major at UCR! I am interested in a variety of different things which include singing, dancing, acting and playing sports like badminton, tennis and basketball as well. Please feel free to reach out to me if you have any questions or just want to hang out!",
+    image: "/ishaan.webp",
+  },
 ];
