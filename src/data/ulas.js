@@ -149,4 +149,10 @@ export const ulas = [
       "Hello everyone, I'm Stanley a 2nd year computer science major. I joined ULA because  of the assistance I have received throughout my time here at UCR during the CS010 series. Now, I want to pay it forward through my time as an ULA. In my free time, I love watching F1 (go papaya!), hitting the gym, and playing badminton.",
     image: "/stanley.webp",
   },
+  {
+    name: "Ishaan",
+    description:
+      "Hello My name is Ishaan Venkatraman and I am currently a second-year Computer Science Major at UCR! I am interested in a variety of different things which include singing, dancing, acting and playing sports like badminton, tennis and basketball as well. Please feel free to reach out to me if you have any questions or just want to hang out!",
+    image: "/ishaan.webp",
+  },
 ];
