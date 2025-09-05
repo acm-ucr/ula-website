@@ -19,7 +19,7 @@ const ULAMapping = () => {
       {ULAs.map((ULA, index) => (
         <motion.div
           key={index}
-          {...animateULAS}
+          {...animateULAS(index)}
           className="relative m-4 flex w-10/12 cursor-pointer flex-col items-center justify-center lg:w-1/4"
         >
           <Card
