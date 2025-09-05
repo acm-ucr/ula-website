@@ -5,7 +5,7 @@ interface testimony {
 
 export const testimonies: testimony[] = [
   {
-    name: "Copy Kurpanek",
+    name: "Cody Kurpanek",
     quote:
       "Being part of the very first group of ULAs, I'm extremely proud to have watched the program grow from a simple tutoring service into something so much more -- a welcoming, collaborative community where students support one another, grow together, and build lasting friendships.",
   },
