@@ -95,12 +95,9 @@ const CalendarEventDialog = ({
       </div>
       <DialogOverlay className="fixed inset-0 w-2/3 bg-gray-400/50 md:w-1/2" />
       <DialogContent className="fixed left-1/2 top-1/2 z-50 max-w-[90%] rounded-xl bg-white shadow-md">
-        <DialogClose asChild>
-          <button
-            className="absolute right-8 top-8 rounded-md bg-gray-100 p-1 text-gray-900"
-            aria-label="Close"
-          >
-            <div className="h-5 w-5">X</div>
+        <DialogClose>
+          <button className="absolute right-8 top-8 rounded-md bg-gray-100 p-1 text-gray-900">
+            X
           </button>
         </DialogClose>
 
