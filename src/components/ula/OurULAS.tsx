@@ -4,14 +4,13 @@ import Card from "@/components/ula/Card";
 import ULAs from "@/data/CurrentULAsData";
 import { motion } from "motion/react";
 
-const animateULAS = (index = 0) => ({
+const animateULAS = {
   initial: { opacity: 0, y: 35 },
   whileInView: { opacity: 1, y: 0 },
   transition: {
     duration: 0.8,
-    delay: index * 0.075,
   },
-});
+};
 
 const ULAMapping = () => {
   return (
