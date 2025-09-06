@@ -6,6 +6,7 @@ import {
   Views,
 } from "react-big-calendar";
 import moment from "moment";
+import { motion } from "motion/react"
 import { useQuery } from "@tanstack/react-query";
 import "react-big-calendar/lib/css/react-big-calendar.css";
 import CustomToolbar from "@/components/calendar/customToolBar";
@@ -201,7 +202,11 @@ const CalendarCall = () => {
 
   return (
     <div>
-      <div className="mx-auto my-4 flex w-11/12 flex-col text-nowrap text-center text-4xl font-bold text-ula-blue-primary lg:flex-row md:justify-between lg:text-6xl">
+      <motion.div 
+      initial = {{opacity: 0, x: -50}}
+      animate = {{opacity: 1, x: 0}}
+      transition = {{duration: 1.2}}
+      className="mx-auto my-4 flex w-11/12 flex-col text-nowrap text-center text-4xl font-bold text-ula-blue-primary lg:flex-row md:justify-between lg:text-6xl">
         <div className="pb-2 md:pb-0">
           {currentMonth}, {currentYear}
         </div>
@@ -223,13 +228,17 @@ const CalendarCall = () => {
             DAY
           </button>
         </div>
-      </div>
+      </motion.div>
       {isLoading || !data ? (
         <div className="flex min-h-screen items-center justify-center">
           Loading...
         </div>
       ) : (
-        <div className="rounded-calendar-top mx-auto h-[120vh] w-11/12 pb-8">
+        <motion.div
+          initial = {{opacity: 0, z: -50}}
+          animate = {{opacity: 1, z: 0}}
+          transition = {{duration: 1.2}}
+        className="rounded-calendar-top mx-auto h-[120vh] w-11/12 pb-8">
           <RBCalendar
             key={isDay ? "CalendarDay" : "CalendarWeek"}
             localizer={localizer}
@@ -274,7 +283,7 @@ const CalendarCall = () => {
               },
             })}
           />
-        </div>
+        </motion.div>
       )}
     </div>
   );

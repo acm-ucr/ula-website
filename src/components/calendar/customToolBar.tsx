@@ -109,7 +109,8 @@ const CustomToolbar: React.FC<CustomToolbarProps> = ({
           </ToggleGroup>
         </div>
 
-        <div className="flex w-full justify-center text-wrap py-3 lg:justify-end lg:space-x-4 lg:py-0">
+        <div 
+          className="flex w-full justify-center text-wrap py-3 lg:justify-end lg:space-x-4 lg:py-0">
           <button
             onClick={() => onNavigate(Navigate.PREVIOUS)}
             className="order-1 text-2xl text-ula-blue-primary transition hover:-translate-x-1 lg:text-3xl"
