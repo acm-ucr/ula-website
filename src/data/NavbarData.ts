@@ -5,7 +5,7 @@ interface navbarItem {
 
 const navbarItems: navbarItem[] = [
   { name: "HOME", link: "/" },
-  { name: "OVERVIEW", link: "/about" },
+  { name: "OVERVIEW", link: "/overview" },
   { name: "CALENDARS", link: "/calendar" },
   { name: "ULAs", link: "/ula" },
 ];
