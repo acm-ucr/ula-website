@@ -52,14 +52,17 @@ const Navbar = () => {
           </Link>
         </motion.div>
       </div>
-      <div className="flex items-center justify-between md:hidden">
+      <motion.div
+        {...fadeIn(0.15)}
+        className="flex items-center justify-between md:hidden"
+      >
         <Link href="/" className="text-2xl font-bold">
           ULA
         </Link>
         <button onClick={toggleMenu} className="text-3xl">
           {isOpen ? <FaTimes /> : <FaBars />}
         </button>
-      </div>
+      </motion.div>
       <div
         className={`absolute left-0 top-full z-50 w-full overflow-hidden bg-ula-blue-primary transition-all duration-300 md:hidden ${
           isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
