@@ -52,7 +52,10 @@ const Navbar = () => {
           </Link>
         </motion.div>
       </div>
-      <motion.div {...fadeIn(0.15)} className="flex items-center justify-between md:hidden">
+      <motion.div
+        {...fadeIn(0.15)}
+        className="flex items-center justify-between md:hidden"
+      >
         <Link href="/" className="text-2xl font-bold">
           ULA
         </Link>
