@@ -77,17 +77,17 @@ const CalendarEventDialog = ({
       <div className="flex h-full flex-col rounded-2xl border-2 border-black bg-ula-blue-accent px-2 text-white">
         <DialogTrigger className="cursor-pointer whitespace-nowrap text-left hover:opacity-50">
           <div
-            className={`overflow-hidden truncate ${isDayView ? "text-xs lg:text-sm" : "lg:text-md text-xs"}`}
+            className={`overflow-hidden truncate ${isDayView ? "text-xs md:text-lg" : "lg:text-md text-xs"}`}
           >
             {hasStartTime && timeRangeDisplay}
           </div>
           <div
-            className={`overflow-hidden truncate ${isDayView ? "text-xs lg:text-sm" : "lg:text-md text-xs"}`}
+            className={`overflow-hidden truncate ${isDayView ? "text-xs md:text-lg" : "lg:text-md text-xs"}`}
           >
             {title}
           </div>
           <div
-            className={`overflow-hidden truncate ${isDayView ? "text-xs lg:text-sm" : "lg:text-md text-xs"}`}
+            className={`overflow-hidden truncate ${isDayView ? "text-xs md:text-lg" : "lg:text-md text-xs"}`}
           >
             {location && location}
           </div>

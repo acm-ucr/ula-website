@@ -99,7 +99,7 @@ const CalendarCall = () => {
   const [selectedClass, setSelectedClass] = useState<string[]>(
     calendarSources.map((source) => source.eventType),
   );
-  const isMobile = useWindowWidth() < 768;
+  const isMobile = useWindowWidth() < 1024;
 
   useEffect(() => {
     setIsDay(isMobile);
@@ -201,11 +201,11 @@ const CalendarCall = () => {
 
   return (
     <div>
-      <div className="mx-auto my-4 flex w-11/12 flex-col text-nowrap text-center text-4xl font-bold text-ula-blue-primary md:flex-row md:justify-between lg:text-6xl">
-        <div className="pb-6 md:pb-0">
+      <div className="mx-auto my-4 flex w-11/12 flex-col text-nowrap text-center text-4xl font-bold text-ula-blue-primary lg:flex-row md:justify-between lg:text-6xl">
+        <div className="pb-2 md:pb-0">
           {currentMonth}, {currentYear}
         </div>
-        <div className="hidden justify-center rounded-xl border-2 border-black px-2 text-xl text-black md:flex">
+        <div className="hidden lg:justify-center rounded-xl border-2 border-black px-2 text-xl text-black lg:flex">
           <button
             onClick={() => setIsDay(false)}
             className={`my-1 rounded-lg px-8 py-2 transition-colors duration-200 ${
