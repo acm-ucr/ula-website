@@ -5,3 +5,7 @@
 .rbc-allday-cell {
   display: none !important;
 }
+
+.rbc-time-header.rbc-overflowing {
+  margin-right: 0 !important;
+}

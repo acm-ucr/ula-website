@@ -3,6 +3,8 @@ import {
   DialogContent,
   DialogTrigger,
   DialogOverlay,
+  DialogClose,
+  DialogTitle,
 } from "@/components/ui/dialog";
 
 interface CalendarEventDialogProps {
@@ -71,8 +73,8 @@ const CalendarEventDialog = ({
   }
 
   return (
-    <Dialog>
-      <div className="ml-2 flex h-full flex-col rounded-2xl border-2 border-black bg-ula-blue-accent px-2 text-white">
+    <Dialog modal={false}>
+      <div className="flex h-full flex-col rounded-2xl border-2 border-black bg-ula-blue-accent px-2 text-white">
         <DialogTrigger className="cursor-pointer whitespace-nowrap text-left hover:opacity-50">
           <div
             className={`overflow-hidden truncate ${isDayView ? "text-xs lg:text-sm" : "lg:text-md text-xs"}`}
@@ -91,20 +93,28 @@ const CalendarEventDialog = ({
           </div>
         </DialogTrigger>
       </div>
-      <DialogOverlay className="bg-gray-400/50">
-        <DialogContent className="z-50 w-1/2 bg-white p-0 shadow-md md:w-2/5 2xl:w-1/3">
-          <div className="text-wrap rounded-t-md bg-ula-blue-accent px-4 py-0 text-[10px] text-white md:px-10 md:py-3 md:text-xl">
-            {title}
-          </div>
-          <div className="rounded-b-xl bg-white px-6 text-[10px] md:px-10 md:text-lg">
-            <ul className="list-disc marker:text-lg marker:text-ula-blue-accent md:space-y-4 md:pb-4 md:pl-10 md:marker:text-2xl">
-              {hasStartTime && <li>{timeRangeDisplay}</li>}
-              {hasLocation && <li>{location}</li>}
-              {description && <li>{description}</li>}
-            </ul>
-          </div>
-        </DialogContent>
-      </DialogOverlay>
+      <DialogOverlay className="fixed inset-0 w-2/3 bg-gray-400/50 md:w-1/2" />
+      <DialogContent className="fixed left-1/2 top-1/2 z-50 max-w-[90%] rounded-xl bg-white shadow-md">
+        <DialogClose asChild>
+          <button
+            className="absolute right-8 top-8 rounded-md bg-gray-100 p-1 text-gray-900"
+            aria-label="Close"
+          >
+            <div className="h-5 w-5">X</div>
+          </button>
+        </DialogClose>
+
+        <DialogTitle className="text-wrap rounded-t-md bg-ula-blue-accent px-4 py-2 text-white md:px-10 md:text-xl">
+          {title}
+        </DialogTitle>
+        <div className="text-wrap break-words break-all rounded-b-xl bg-white px-6 text-sm md:px-10 md:text-lg">
+          <ul className="list-disc marker:text-lg marker:text-ula-blue-accent md:space-y-4 md:pb-4 md:pl-10 md:marker:text-2xl">
+            {hasStartTime && <li>{timeRangeDisplay}</li>}
+            {hasLocation && <li>{location}</li>}
+            {description && <li>{description}</li>}
+          </ul>
+        </div>
+      </DialogContent>
     </Dialog>
   );
 };
