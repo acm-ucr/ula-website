@@ -26,10 +26,10 @@ export const courses: course[] = [
   },
   {
     name: "CS111",
-    desc: "Covers discrete structures, asymptotics, recurrences, generating functions, graphs, trees, and number theory.",
+    desc: "Covers discrete structures, asymptotic analysis, recurrences, graph theory, and number theory.",
   },
   {
     name: "CS141",
-    desc: "Covers algorithm analysis, including greedy algorithms, divide and conquer, and dynamic programming.",
+    desc: "Covers algorithm analysis, greedy algorithms, divide and conquer algorithms, dynamic programming, and graph theory.",
   },
 ];
