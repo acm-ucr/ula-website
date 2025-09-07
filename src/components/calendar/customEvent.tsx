@@ -19,6 +19,7 @@ interface CalendarEventDialogProps {
   location?: string;
   description?: string;
   isDayView: boolean;
+  eventType: string;
 }
 
 const CalendarEventDialog = ({
@@ -28,6 +29,7 @@ const CalendarEventDialog = ({
   location,
   description,
   isDayView,
+  eventType,
 }: CalendarEventDialogProps) => {
   let eventStartDate = new Date();
   let eventEndDate = new Date();
@@ -71,9 +73,23 @@ const CalendarEventDialog = ({
     }
   }
 
+  const eventTypeColorMap: Record<string, string> = {
+    "CS 009ABC": "bg-ula-9-series",
+    "CS 010ABC": "bg-ula-10-series",
+    "CS 011": "bg-ula-11",
+    "CS 061": "bg-ula-61",
+    "CS 100": "bg-ula-100",
+    "CS 111": "bg-ula-111",
+    "CS 141": "bg-ula-141",
+  };
+
   return (
     <Dialog modal={false}>
-      <div className="flex h-full flex-col rounded-2xl border-2 border-black bg-ula-blue-accent px-2 text-white">
+      <div
+        className={`flex h-full flex-col rounded-2xl border-2 border-black px-2 text-white ${
+          eventTypeColorMap[eventType] || "bg-ula-blue-accent"
+        }`}
+      >
         <DialogTrigger className="h-full cursor-pointer text-left hover:opacity-50">
           <div
             className={`h-full overflow-hidden truncate ${isDayView ? "text-[12px] md:text-base lg:text-xl" : "text-xs lg:text-sm 2xl:text-xl"}`}
@@ -86,7 +102,11 @@ const CalendarEventDialog = ({
       </div>
       <DialogOverlay className="fixed inset-0 w-2/3 bg-gray-400/50 md:w-1/2" />
       <DialogContent className="fixed left-1/2 top-1/2 z-50 max-w-[90%] rounded-xl bg-white shadow-xl">
-        <DialogTitle className="text-wrap rounded-t-md bg-ula-blue-accent px-4 py-2 text-white md:px-10 md:text-xl">
+        <DialogTitle
+          className={`text-wrap rounded-t-md px-4 py-2 text-white md:px-10 md:text-xl ${
+            eventTypeColorMap[eventType] || "bg-ula-blue-accent"
+          }`}
+        >
           {title}
         </DialogTitle>
         <div className="text-wrap break-words break-all rounded-b-xl bg-white px-6 text-sm md:px-10 md:text-lg">
