@@ -108,7 +108,6 @@ const CalendarCall = () => {
 
   const { data, isLoading } = useQuery<{
     allEvents: TypedGoogleEventProps[];
-    futureEvents: TypedGoogleEventProps[];
   }>({
     queryKey: ["googleCalendarEvents"],
     queryFn: async () => {
@@ -147,14 +146,7 @@ const CalendarCall = () => {
 
       const allEvents: TypedGoogleEventProps[] = results.flat();
 
-      const futureEvents = allEvents
-        .filter((item) => {
-          const startString = item.start?.dateTime || item.start?.date;
-          return startString && new Date(startString) >= now;
-        })
-        .slice(0, 3);
-
-      return { allEvents, futureEvents };
+      return { allEvents };
     },
   });
 
