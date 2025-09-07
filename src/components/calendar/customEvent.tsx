@@ -114,7 +114,6 @@ const CalendarEventDialog = ({
             {hasStartTime && <li>{timeRangeDisplay}</li>}
             {hasLocation && <li>{location}</li>}
             {description && <li>{description}</li>}
-            <li className="font-semibold text-ula-blue-accent">{eventType}</li>
           </ul>
         </div>
       </DialogContent>
