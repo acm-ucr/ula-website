@@ -3,7 +3,6 @@ import {
   DialogContent,
   DialogTrigger,
   DialogOverlay,
-  DialogClose,
   DialogTitle,
 } from "@/components/ui/dialog";
 
@@ -75,32 +74,18 @@ const CalendarEventDialog = ({
   return (
     <Dialog modal={false}>
       <div className="flex h-full flex-col rounded-2xl border-2 border-black bg-ula-blue-accent px-2 text-white">
-        <DialogTrigger className="cursor-pointer whitespace-nowrap text-left hover:opacity-50">
+        <DialogTrigger className="h-full cursor-pointer text-left hover:opacity-50">
           <div
-            className={`overflow-hidden truncate ${isDayView ? "text-xs lg:text-sm" : "lg:text-md text-xs"}`}
+            className={`h-full overflow-hidden truncate ${isDayView ? "text-[12px] md:text-base lg:text-xl" : "text-xs lg:text-sm 2xl:text-xl"}`}
           >
-            {hasStartTime && timeRangeDisplay}
-          </div>
-          <div
-            className={`overflow-hidden truncate ${isDayView ? "text-xs lg:text-sm" : "lg:text-md text-xs"}`}
-          >
-            {title}
-          </div>
-          <div
-            className={`overflow-hidden truncate ${isDayView ? "text-xs lg:text-sm" : "lg:text-md text-xs"}`}
-          >
+            {hasStartTime && timeRangeDisplay} <br />
+            {title} <br />
             {location && location}
           </div>
         </DialogTrigger>
       </div>
       <DialogOverlay className="fixed inset-0 w-2/3 bg-gray-400/50 md:w-1/2" />
-      <DialogContent className="fixed left-1/2 top-1/2 z-50 max-w-[90%] rounded-xl bg-white shadow-md">
-        <DialogClose>
-          <button className="absolute right-8 top-8 rounded-md bg-gray-100 p-1 text-gray-900">
-            X
-          </button>
-        </DialogClose>
-
+      <DialogContent className="fixed left-1/2 top-1/2 z-50 max-w-[90%] rounded-xl bg-white shadow-xl">
         <DialogTitle className="text-wrap rounded-t-md bg-ula-blue-accent px-4 py-2 text-white md:px-10 md:text-xl">
           {title}
         </DialogTitle>
