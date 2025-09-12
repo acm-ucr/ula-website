@@ -33,7 +33,7 @@ const Questions = () => {
           <InfoButton
             icon={blueBook}
             text="Browse Courses"
-            link="/about#courseOfferings"
+            link="/overview#courseOfferings"
           />
         </motion.div>
       </div>
