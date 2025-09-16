@@ -24,9 +24,13 @@ const Testimony = () => {
         <Header text="Words from the ULA Community" />
         <div className="mx-auto w-1/5 justify-end border-b-4 border-ula-yellow-primary p-2" />
       </motion.div>
-      <div className="mx-auto flex flex-wrap justify-center lg:w-3/4">
+      <div className="mx-auto flex w-full flex-wrap justify-center md:w-5/6">
         {testimonies.map(({ name, role, quote }, index) => (
-          <motion.div key={index} {...oppositeSliding} className="w-1/2 p-4">
+          <motion.div
+            key={index}
+            {...oppositeSliding}
+            className="w-full py-4 md:w-1/2 md:px-4"
+          >
             <Card key={index} name={name} role={role} quote={quote} />
           </motion.div>
         ))}
