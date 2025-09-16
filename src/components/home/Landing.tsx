@@ -23,9 +23,9 @@ const Landing = () => {
         {...landingAnimation}
       >
         <div className="flex h-1/3 w-1/3 place-items-center justify-center pb-6 text-center text-4xl font-bold text-white md:text-5xl lg:text-6xl">
-        <div>
-          UCR CSE's Undergraduate Learning Assistants
-          <div className="border-ula-yellow-primary border-b-4 w-full pt-4" />
+          <div>
+            UCR CSE's Undergraduate Learning Assistants
+            <div className="w-full border-b-4 border-ula-yellow-primary pt-4" />
           </div>
         </div>
       </motion.div>

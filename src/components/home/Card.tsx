@@ -6,6 +6,7 @@ import quoteIcon from "@/public/home/quote.svg";
 
 interface componentProps {
   name: string;
+  role: string;
   quote: string;
 }
 
@@ -16,7 +17,7 @@ const hoverAnimation = {
   },
 };
 
-const Card = ({ name, quote }: componentProps) => {
+const Card = ({ name, role, quote }: componentProps) => {
   return (
     <motion.div
       {...hoverAnimation}
@@ -26,7 +27,9 @@ const Card = ({ name, quote }: componentProps) => {
         <Image src={quoteIcon} className="w-1/2 lg:w-3/4" alt="quoteIcon" />
       </div>
       <div className="p-5 text-left text-sm lg:text-base">{quote}</div>
-      <div className="p-1 text-sm font-bold lg:text-base">{name}</div>
+      <div className="p-1 text-sm font-bold lg:text-base">
+        {name}, {role}
+      </div>
     </motion.div>
   );
 };
