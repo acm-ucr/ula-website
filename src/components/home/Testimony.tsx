@@ -25,11 +25,11 @@ const Testimony = () => {
         <div className="mx-auto w-1/5 justify-end border-b-4 border-ula-yellow-primary p-2" />
       </motion.div>
       <div className="mx-auto flex flex-wrap justify-center lg:w-3/4">
-          {testimonies.map(({ name, role, quote }, index) => (
-            <motion.div key={index} {...oppositeSliding} className="p-4 w-1/2" >
-              <Card key={index} name={name} role={role} quote={quote} />
-            </motion.div>
-          ))}
+        {testimonies.map(({ name, role, quote }, index) => (
+          <motion.div key={index} {...oppositeSliding} className="w-1/2 p-4">
+            <Card key={index} name={name} role={role} quote={quote} />
+          </motion.div>
+        ))}
       </div>
     </div>
   );
