@@ -14,7 +14,7 @@ import Joel from "@/public/ulas/joel.webp";
 import Joy from "@/public/ulas/joy.jpeg";
 import KevinH from "@/public/ulas/kevinH.webp";
 import KevinL from "@/public/ulas/kevinL.webp";
-import Kyan from "@/public/ulas/kyan.JPEG";
+import Kyan from "@/public/ulas/kyan.webp";
 import Livayaa from "@/public/ulas/livayaa.jpeg";
 import Mailyn from "@/public/ulas/mailyn.webp";
 import Natalie from "@/public/ulas/natalie.webp";
