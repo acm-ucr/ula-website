@@ -138,7 +138,7 @@ const ULAs: ULA[] = [
     name: "Kyan",
     classes: "CS10ABC",
     image: Kyan,
-    desc: "Hello! My name's Kyan and I'm a third year CSBA major. Having been raised by two teachers I've always held an appreciation for those who give through education. Throughout my undergrad I've been privileged enough to learn from some amazing ULA's, and I'm excited to pay that guidance forward. In my free time I like playing sports, listening to music, and reading manga. Feel free to reach out if you have any questions!",
+    desc: "Hello! My name's Kyan and I'm a third year CSBA major. Having been raised by two teachers I've always held an appreciation for those who give through education. Throughout my undergrad I've learned from some amazing ULA's, and I'm excited to pay that guidance forward. In my free time I like playing sports, listening to music, and reading manga. Feel free to reach out!",
   },
   {
     name: "Livayaa",
