@@ -82,7 +82,7 @@ const ULAs: ULA[] = [
   },
   {
     name: "Athena",
-    classes: "CS11, 111",
+    classes: "CS11, 111, 141",
     image: Athena,
     desc: "Hi, I'm Athena and I am a third-year computer science major. I became a ULA because I want to help others the same way others have helped me and so that I can learn how to better communicate with other people. In my free time, I love to draw/paint and read fantasy series.",
   },
@@ -106,7 +106,7 @@ const ULAs: ULA[] = [
   },
   {
     name: "Jameel",
-    classes: "CS10ABC",
+    classes: "CS10ABC, 61",
     image: Jameel,
     desc: "I'm a third year CEN student eager to learn many topics in EE, CS, and Math. I will help you become better lifelong learners in whatever subject you enjoy. I hope we can make each other better people and better engineers!",
   },
@@ -130,7 +130,7 @@ const ULAs: ULA[] = [
   },
   {
     name: "Kevin L.",
-    classes: "CS141",
+    classes: "CS111, 141",
     image: KevinL,
     desc: "Hi everyone! My name is Kevin, and I am a third year computer science major. I love getting to meet others interested in computing, and love getting to talk with others about cs, especially algorithms! I love cats, baking, Hamilton, and getting to watch new TV Shows in my spare time!",
   },
@@ -160,7 +160,7 @@ const ULAs: ULA[] = [
   },
   {
     name: "Marilyn",
-    classes: "CS100",
+    classes: "CS10ABC",
     image: Marilyn,
     desc: "Hello! My name is Marilyn and I am a second year Computer Science major. I wanted to become a ULA because I enjoy being able to help others and share what I have learned with them. I love baking and spending time with my family. Feel free to reach out if you need help with anything or if you have any questions!",
   },
@@ -174,7 +174,7 @@ const ULAs: ULA[] = [
     name: "Nikhil",
     classes: "CS9ABC",
     image: Nikhil,
-    desc: "Hi, my name is Nikhil Rao, and I’m a fourth-year Computer Science major. I wanted to become a ULA because I feel it’s the right time to give back to the same community that’s supported me throughout my journey here. Outside of school, I enjoy playing video games, going to the gym, listening to music, and watching shows and movies.",
+    desc: "Hi, my name is Nikhil Rao, and I'm a fourth-year Computer Science major. I wanted to become a ULA because I feel it’s the right time to give back to the same community that’s supported me throughout my journey here. Outside of school, I enjoy playing video games, going to the gym, listening to music, and watching shows and movies.",
   },
   {
     name: "Pratheek",
@@ -190,7 +190,7 @@ const ULAs: ULA[] = [
   },
   {
     name: "Riley",
-    classes: "CS9ABC",
+    classes: "CS10ABC",
     image: Riley,
     desc: "Hi everyone! My name is Riley, and I'm a second-year Data Science major at UCR. I'm working as a ULA tutor this year, and I'm really looking forward to helping students and meeting new people. Outside of school, I enjoy playing basketball, making art, and just exploring new interests.",
   },
@@ -208,7 +208,7 @@ const ULAs: ULA[] = [
   },
   {
     name: "Simon",
-    classes: "CS61",
+    classes: "CS100",
     image: Simon,
     desc: "Hi, my name is Simon! I'm a 2nd year Computer Science major. I like reading novels, watching shows, and sleeping. I also enjoy helping people, so feel free to ask me for help with your classes.",
   },
