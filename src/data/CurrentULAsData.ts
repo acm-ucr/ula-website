@@ -22,7 +22,6 @@ import Marilyn from "@/public/ulas/marilyn.webp";
 import Natalie from "@/public/ulas/natalie.webp";
 import Nikhil from "@/public/ulas/nikhil.webp";
 import Pratheek from "@/public/ulas/pratheek.webp";
-import Ramya from "@/public/ulas/ramya.webp";
 import Riley from "@/public/ulas/riley.webp";
 import Sahana from "@/public/ulas/sahana.webp";
 import Sarbesh from "@/public/ulas/sarbesh.webp";
@@ -181,12 +180,6 @@ const ULAs: ULA[] = [
     classes: "CS10ABC",
     image: Pratheek,
     desc: "Hi, my name is Pratheek and I am a second year computer science major. I became a ULA because I wanted to help students the same way I received help from other ULAs in my freshman year. In my free time, I like playing badminton and watching soccer!",
-  },
-  {
-    name: "Ramya",
-    classes: "CS11, 111",
-    image: Ramya,
-    desc: "Hi, my name is Ramya and I'm a fourth year CS major. I wanted to be a ULA because I enjoy tutoring and I want to do what ULA did for me. In my free time I love to spend time with my dog!",
   },
   {
     name: "Riley",
