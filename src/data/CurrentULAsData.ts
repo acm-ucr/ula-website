@@ -45,7 +45,7 @@ const ULAs: ULA[] = [
   },
   {
     name: "Adi",
-    classes: "CS61",
+    classes: "CS61, 100",
     image: Adithya,
     desc: "Hi hi ! I'm Adi, a third year Computer Engineering major. I see ULA as an opportunity to help those around me and learn more in the process. In my free time, I love watching sports (KTBFFH !), comic books, and video games.",
   },
@@ -75,7 +75,7 @@ const ULAs: ULA[] = [
   },
   {
     name: "Angel",
-    classes: "CS9C, CS10ABC",
+    classes: "CS9C, 10ABC, 153",
     image: Angel,
     desc: "Hi! My name is Angel Franco and I am a 4th year Math major with a concentration in Computational Math. I became a ULA because I like to help. If you ever need help with CS010ABC I got you! If you like One Piece we can always talk about that too! (Just don't spoil because I don't read the Manga)",
   },
@@ -105,7 +105,7 @@ const ULAs: ULA[] = [
   },
   {
     name: "Jameel",
-    classes: "CS10ABC, 61",
+    classes: "CS10ABC, 61, 111",
     image: Jameel,
     desc: "I'm a third year CEN student eager to learn many topics in EE, CS, and Math. I will help you become better lifelong learners in whatever subject you enjoy. I hope we can make each other better people and better engineers!",
   },

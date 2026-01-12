@@ -65,46 +65,53 @@ const CustomToolbar: React.FC<CustomToolbarProps> = ({
             className="flex w-full flex-wrap md:flex-nowrap"
           >
             <ToggleGroupItem
-              className="flex w-1/5 justify-center text-nowrap rounded-md border-2 border-ula-yellow-primary px-8 py-3 text-black data-[state=on]:bg-ula-yellow-primary md:px-3"
+              className="md:text-md flex w-1/5 justify-center text-nowrap rounded-md border-2 border-ula-yellow-primary px-3 py-3 text-xs text-black data-[state=on]:bg-ula-yellow-primary"
               value="CS 009ABC"
             >
               CS 009ABC
             </ToggleGroupItem>
             <ToggleGroupItem
-              className="flex w-1/5 justify-center text-nowrap rounded-md border-2 border-ula-yellow-primary px-8 py-3 text-black data-[state=on]:bg-ula-yellow-primary md:px-3"
+              className="md:text-md flex w-1/5 justify-center text-nowrap rounded-md border-2 border-ula-yellow-primary px-3 py-3 text-xs text-black data-[state=on]:bg-ula-yellow-primary"
               value="CS 010ABC"
             >
               CS 010ABC
             </ToggleGroupItem>
-            <ToggleGroupItem
-              className="flex w-1/5 justify-center text-nowrap rounded-md border-2 border-ula-yellow-primary px-8 py-3 text-black data-[state=on]:bg-ula-yellow-primary md:px-3"
+            {/* <ToggleGroupItem
+              className="flex w-1/5 justify-center text-nowrap rounded-md border-2 border-ula-yellow-primary py-3 text-black data-[state=on]:bg-ula-yellow-primary px-3 md:text-md text-xs"
               value="CS 011"
             >
               CS 011
-            </ToggleGroupItem>
+            </ToggleGroupItem> */}
             <ToggleGroupItem
-              className="flex w-1/5 justify-center text-nowrap rounded-md border-2 border-ula-yellow-primary px-8 py-3 text-black data-[state=on]:bg-ula-yellow-primary md:px-3"
+              className="md:text-md flex w-1/5 justify-center text-nowrap rounded-md border-2 border-ula-yellow-primary px-3 py-3 text-xs text-black data-[state=on]:bg-ula-yellow-primary"
               value="CS 061"
             >
               CS 061
             </ToggleGroupItem>
             <ToggleGroupItem
-              className="flex w-1/5 justify-center text-nowrap rounded-md border-2 border-ula-yellow-primary px-8 py-3 text-black data-[state=on]:bg-ula-yellow-primary md:px-3"
+              className="md:text-md flex w-1/5 justify-center text-nowrap rounded-md border-2 border-ula-yellow-primary px-3 py-3 text-xs text-black data-[state=on]:bg-ula-yellow-primary"
               value="CS 100"
             >
               CS 100
             </ToggleGroupItem>
             <ToggleGroupItem
-              className="flex w-1/5 justify-center text-nowrap rounded-md border-2 border-ula-yellow-primary px-8 py-3 text-black data-[state=on]:bg-ula-yellow-primary md:px-3"
+              className="md:text-md flex w-1/5 justify-center text-nowrap rounded-md border-2 border-ula-yellow-primary px-3 py-3 text-xs text-black data-[state=on]:bg-ula-yellow-primary"
               value="CS 111"
             >
               CS 111
             </ToggleGroupItem>
             <ToggleGroupItem
-              className="flex w-1/5 justify-center text-nowrap rounded-md border-2 border-ula-yellow-primary px-8 py-3 text-black data-[state=on]:bg-ula-yellow-primary md:px-3"
+              className="md:text-md flex w-1/5 justify-center text-nowrap rounded-md border-2 border-ula-yellow-primary px-3 py-3 text-xs text-black data-[state=on]:bg-ula-yellow-primary"
               value="CS 141"
             >
               CS 141
+            </ToggleGroupItem>
+
+            <ToggleGroupItem
+              className="md:text-md flex w-1/5 justify-center text-nowrap rounded-md border-2 border-ula-yellow-primary px-3 py-3 text-xs text-black data-[state=on]:bg-ula-yellow-primary"
+              value="CS 153"
+            >
+              CS 153
             </ToggleGroupItem>
           </ToggleGroup>
         </div>

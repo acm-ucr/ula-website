@@ -81,6 +81,7 @@ const CalendarEventDialog = ({
     "CS 100": "bg-ula-100",
     "CS 111": "bg-ula-111",
     "CS 141": "bg-ula-141",
+    "CS 153": "bg-ula-153",
   };
 
   return (
