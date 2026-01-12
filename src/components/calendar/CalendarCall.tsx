@@ -62,10 +62,10 @@ export const calendarSources = [
     id: process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_SOFTWARE,
     eventType: "CS 010ABC",
   },
-  {
-    id: process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_DISCRETE,
-    eventType: "CS 011",
-  },
+  // {
+  //   id: process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_DISCRETE,
+  //   eventType: "CS 011",
+  // },
   {
     id: process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_COMPUTER_ARCHITECTURE,
     eventType: "CS 061",
@@ -81,6 +81,10 @@ export const calendarSources = [
   {
     id: process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_ALGORITHMS,
     eventType: "CS 141",
+  },
+  {
+    id: process.env.NEXT_PUBLIC_GOOGLE_CALENDAR_DISCRETE,
+    eventType: "CS 153",
   },
 ];
 
