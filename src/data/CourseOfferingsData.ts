@@ -32,4 +32,8 @@ export const courses: course[] = [
     name: "CS141",
     desc: "Covers algorithm analysis, greedy algorithms, divide and conquer algorithms, dynamic programming, and graph theory.",
   },
+  {
+    name: "CS153",
+    desc: "Covers operating system abstractions, threads, processes, scheduling, concurrency, memory management with paging, and file systems.",
+  },
 ];
