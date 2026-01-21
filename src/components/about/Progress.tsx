@@ -49,7 +49,7 @@ const Progress = () => {
             className="text-center text-6xl font-extrabold text-ula-yellow-primary"
             {...xPositiveAnimation}
           >
-            <CountUp start={0} end={30} duration={2.5} />+
+            <CountUp start={0} end={40} duration={2.5} />+
           </motion.div>
           <motion.p
             className="text-nowrap p-2 text-center text-white"

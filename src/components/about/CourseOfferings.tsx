@@ -63,7 +63,7 @@ const CourseOfferings = () => {
             <CourseOfferingCard
               course={course.name}
               desc={course.desc}
-              color={[0, 2, 5].includes(index) ? "blue" : "yellow"}
+              color={[0, 2, 5, 7].includes(index) ? "blue" : "yellow"}
             />
           </motion.div>
         ))}
@@ -78,7 +78,7 @@ const CourseOfferings = () => {
             <CourseOfferingCard
               course={course.name}
               desc={course.desc}
-              color={[0, 3, 4].includes(index) ? "blue" : "yellow"}
+              color={[0, 3, 4, 7].includes(index) ? "blue" : "yellow"}
             />
           </motion.div>
         ))}
