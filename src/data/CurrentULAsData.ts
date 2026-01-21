@@ -1,4 +1,3 @@
-import Aaryan from "@/public/ulas/aaryan.webp";
 import Adithya from "@/public/ulas/adithya.webp";
 import Allen from "@/public/ulas/allen.webp";
 import Alton from "@/public/ulas/alton.webp";
@@ -37,12 +36,6 @@ export interface ULA {
 }
 
 const ULAs: ULA[] = [
-  {
-    name: "Aaryan",
-    classes: "CS61, 100",
-    image: Aaryan,
-    desc: "Hi, my name's Aaryan, and I'm a computer science major! I am passionate about computer science and enjoy video games. As a ULA, I strive to help others learn and grow in their understanding of technology and coding.",
-  },
   {
     name: "Adi",
     classes: "CS61, 100",
@@ -87,7 +80,7 @@ const ULAs: ULA[] = [
   },
   {
     name: "Ellie",
-    classes: "CS9C, CS10ABC",
+    classes: "CS9C, 10ABC",
     image: Ellie,
     desc: "Hi! My name is Ellie, and I am a second-year computer science major. I became a ULA because I am passionate about helping others, both in their academic success and in finding confidence in their abilities. I love cooking, reading, drinking coffee, and being active!",
   },
@@ -105,7 +98,7 @@ const ULAs: ULA[] = [
   },
   {
     name: "Jameel",
-    classes: "CS10ABC, 61, 111",
+    classes: "CS61, 111",
     image: Jameel,
     desc: "I'm a third year CEN student eager to learn many topics in EE, CS, and Math. I will help you become better lifelong learners in whatever subject you enjoy. I hope we can make each other better people and better engineers!",
   },
