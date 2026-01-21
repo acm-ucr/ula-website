@@ -76,12 +76,12 @@ const CustomToolbar: React.FC<CustomToolbarProps> = ({
             >
               CS 010ABC
             </ToggleGroupItem>
-            {/* <ToggleGroupItem
-              className="flex w-1/5 justify-center text-nowrap rounded-md border-2 border-ula-yellow-primary py-3 text-black data-[state=on]:bg-ula-yellow-primary px-3 md:text-md text-xs"
+            <ToggleGroupItem
+              className="md:text-md flex w-1/5 justify-center text-nowrap rounded-md border-2 border-ula-yellow-primary px-3 py-3 text-xs text-black data-[state=on]:bg-ula-yellow-primary"
               value="CS 011"
             >
               CS 011
-            </ToggleGroupItem> */}
+            </ToggleGroupItem>
             <ToggleGroupItem
               className="md:text-md flex w-1/5 justify-center text-nowrap rounded-md border-2 border-ula-yellow-primary px-3 py-3 text-xs text-black data-[state=on]:bg-ula-yellow-primary"
               value="CS 061"

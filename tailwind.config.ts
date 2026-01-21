@@ -12,7 +12,7 @@ module.exports = {
           "blue-highlight": "#E7F3FF",
           "10-series": "#647BBA",
           "9-series": "#75BA96",
-          "11": "#9764C4",
+          "11": "#F0B3A2",
           "61": "#EDB778",
           "100": "#B78852",
           "111": "#BD5F5F",
