@@ -1,4 +1,3 @@
-import Aaryan from "@/public/ulas/aaryan.webp";
 import Adithya from "@/public/ulas/adithya.webp";
 import Allen from "@/public/ulas/allen.webp";
 import Alton from "@/public/ulas/alton.webp";
