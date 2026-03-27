@@ -80,7 +80,7 @@ const ULAs: ULA[] = [
   },
   {
     name: "Ellie",
-    classes: "CS9C, 10ABC",
+    classes: "10ABC",
     image: Ellie,
     desc: "Hi! My name is Ellie, and I am a second-year computer science major. I became a ULA because I am passionate about helping others, both in their academic success and in finding confidence in their abilities. I love cooking, reading, drinking coffee, and being active!",
   },
