@@ -16,7 +16,6 @@ import KevinL from "@/public/ulas/kevinL.webp";
 import Kyan from "@/public/ulas/kyan.webp";
 import Livayaa from "@/public/ulas/livayaa.webp";
 import Luis from "@/public/ulas/luis.webp";
-import Mailyn from "@/public/ulas/mailyn.webp";
 import Marilyn from "@/public/ulas/marilyn.webp";
 import Natalie from "@/public/ulas/natalie.webp";
 import Nikhil from "@/public/ulas/nikhil.webp";
@@ -143,12 +142,6 @@ const ULAs: ULA[] = [
     classes: "CS10ABC",
     image: Luis,
     desc: "Hi everyone! My name is Luis Bojorquez I'm a third year CSBA major. As a ULA I strive to help others, the same way others have helped me. I am interested in running, going to the gym, and I love One Piece.",
-  },
-  {
-    name: "Mailyn",
-    classes: "CS10ABC",
-    image: Mailyn,
-    desc: "Hi everyone! My name is Mailyn and I'm a fourth year computer science major. I joined ULA because I really enjoy the program, and it always been really friendly and helpful to me when I came. I want to hopefully be able to do the same for other students. In my free time, I like to go to the gym and play the guitar!",
   },
   {
     name: "Marilyn",
