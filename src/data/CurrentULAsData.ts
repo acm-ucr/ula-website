@@ -48,7 +48,7 @@ const ULAs: ULA[] = [
   },
   {
     name: "Allen",
-    classes: "CS9ABC",
+    classes: "CS9ABC, 10ABC",
     image: Allen,
     desc: "Hi everyone! I'm Allen Biju, and I am a fourth-year computer science major with a business analytics minor. I wanted to become a ULA to ensure that everyone knows their questions are always heard. Feel free to reach out if you need any help with classes or if you need someone to talk to. :)",
   },
