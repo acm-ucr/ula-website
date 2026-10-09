@@ -1,4 +1,5 @@
 import Adithya from "@/public/ulas/adithya.webp";
+import Allen from "@/public/ulas/allen.webp";
 import Ava from "@/public/ulas/ava.webp";
 import Benito from "@/public/ulas/benito.webp";
 import Chiagoziem from "@/public/ulas/Chiagoziem.webp";
@@ -44,6 +45,12 @@ const ULAs: ULA[] = [
     classes: "CS10ABC, 61, 100",
     image: Adithya,
     desc: "Hi hi ! I'm Adi, a fourth year Computer Engineering major. I see ULA as an opportunity to help those around me and learn more in the process. In my free time, I love watching sports (KTBFFH !), comic books, and video games.",
+  },
+  {
+    name: "Allen",
+    classes: "CS9ABC",
+    image: Allen,
+    desc: "Hi everyone! I'm Allen Biju, and I am a fourth-year computer science major with a business analytics minor. I wanted to become a ULA to ensure that everyone knows their questions are always heard. Feel free to reach out if you need any help with classes or if you need someone to talk to. :)",
   },
   {
     name: "Ava",
