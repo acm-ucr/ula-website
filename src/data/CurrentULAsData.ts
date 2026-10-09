@@ -2,7 +2,7 @@ import Adithya from "@/public/ulas/adithya.webp";
 import Allen from "@/public/ulas/allen.webp";
 import Ava from "@/public/ulas/ava.webp";
 import Benito from "@/public/ulas/benito.webp";
-import Chiagoziem from "@/public/ulas/Chiagoziem.webp";
+import Chiagoziem from "@/public/ulas/chiagoziem.webp";
 import Dennis from "@/public/ulas/dennis.webp";
 import Felicia from "@/public/ulas/felicia.webp";
 import Gina from "@/public/ulas/gina.webp";
