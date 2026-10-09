@@ -1,5 +1,5 @@
 import Adithya from "@/public/ulas/adithya.webp";
-import Ava from "@/public/ulas/ava.JPG";
+import Ava from "@/public/ulas/ava.webp";
 import Benito from "@/public/ulas/benito.webp";
 import Chiagoziem from "@/public/ulas/Chiagoziem.jpg";
 import Dennis from "@/public/ulas/dennis.webp";
