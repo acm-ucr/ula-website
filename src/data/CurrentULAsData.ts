@@ -158,7 +158,7 @@ const ULAs: ULA[] = [
     name: "Kian",
     classes: "CS10ABC",
     image: Kian,
-    desc: "Hello, my name is Kian and I am a senior in Computer Science. I became a ULA to help students gain confidence in their Computer Science coursework, while also encouraging them to apply their knowledge to create something cool. I am an aspiring game programmer so on top of coursework-related questions, I can answer any questions related to game development. I enjoy photography, video games, cooking, watching Formula 1 and spending time with my Shiba Inu, Snoopy.",
+    desc: "Hello, my name is Kian and I am a senior in Computer Science. I became a ULA to help students gain confidence in their CS coursework, while also encouraging them to apply their knowledge to create something cool. I enjoy video games, cooking, watching F1 and pampering my Shiba Inu, Snoopy.",
   },
   {
     name: "Konstantin",
@@ -228,7 +228,7 @@ const ULAs: ULA[] = [
   },
   {
     name: "Vignesh",
-    classes: "CS10ABC",
+    classes: "CS10ABC, CS100",
     image: Vignesh,
     desc: "Hey everyone! I am Vignesh Thondikulam. I am a 3rd year Robotics Engineering student. Some things that I love: meeting new people, discussing data structures, cooking, playing badminton, and watching comedy shows! Don't hesitate to reach out if you need any help!",
   },
